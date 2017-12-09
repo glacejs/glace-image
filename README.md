@@ -1,6 +1,6 @@
 ## GlaceJS Image plugin
 
-Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) to process images and screenshots.
+Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) framework to process images and screenshots.
 
 ## How to install
 
