@@ -2,6 +2,13 @@
 
 Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) framework to process images and screenshots.
 
+## Features
+
+- Image capture via [selenium](http://webdriver.io/api/protocol/screenshot.html)
+- Image capture via [html2canvas](https://html2canvas.hertzen.com/)
+- Images comparision mechanism via [ImageMagick](https://www.imagemagick.org/script/index.php)
+- Search image inside image via own [pixel-by-pixel](https://github.com/glacejs/glace-image/blob/master/lib/image.js) algorithm
+
 ## How to install
 
 ```
@@ -22,3 +29,7 @@ If plugin is used as a part of `GlaceJS` it will be loaded automatically.
 
 - [config](GlaceConfig.html)
 - [steps](ImageSteps.html)
+
+## Test examples
+
+See [integration tests](https://github.com/glacejs/glace-js/blob/master/tests/integration/testImage.js) in order to explore examples.
