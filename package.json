@@ -1,6 +1,6 @@
 {
   "name": "glace-image",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "GlaceJS Image plugin",
   "main": "lib/index.js",
   "scripts": {
