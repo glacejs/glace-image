@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/glacejs/glace-image.svg?branch=master)](https://travis-ci.org/glacejs/glace-image)
+
 ## GlaceJS Image plugin
 
 Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) framework to process images and screenshots.
