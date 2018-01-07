@@ -121,9 +121,11 @@ sharp.cache(false);
 
 var ImageSteps = {
     /**
-     * Used imports.
+     * modules
      */
+    __fs: fs,
     __screenshot: screenshot,
+    __sharp: sharp,
     /**
      * Step to make web screenshot in browser.
      *
@@ -265,7 +267,7 @@ var ImageSteps = {
 
         var result = await image(fullImage)
             .includes(includedImage, { tolerance: threshold,
-                                     matchedPath: matchedImagePath });
+                                       matchedPath: matchedImagePath });
 
         if (shouldBe) {
             expect(result.isIncluded,
@@ -449,12 +451,11 @@ var ImageSteps = {
                 html2canvas(
                     element,
                     {
-                        onrendered: function(canvas) {
-                            window.__screenshot = canvas
-                                .toDataURL()
-                                .split("data:image/png;base64,")[1];
-                        },
                         useCORS: true  // capture images from another domains
+                    }).then(function (canvas) {
+                        window.__screenshot = canvas
+                            .toDataURL()
+                            .split("data:image/png;base64,")[1];
                     });
             };
 
@@ -465,9 +466,7 @@ var ImageSteps = {
 
             var script = document.createElement("script");
             script.onload = makeScreenshot;
-            script.src = "https://cdnjs.cloudflare.com" +
-                         "/ajax/libs/html2canvas/" +
-                         "0.5.0-beta4/html2canvas.min.js";
+            script.src = "http://html2canvas.hertzen.com/dist/html2canvas.min.js";
             document.body.appendChild(script);
 
         }, cssSelector);
@@ -500,55 +499,41 @@ var ImageSteps = {
      * @arg {string} imagePath - Path to image which element will be cut from.
      * @arg {string} elementName - Name of element which will be cut.
      * @arg {object} [opts] - Helper options.
+     * @arg {string} [opts.path] - Path to cut image.
+     * @arg {string} [opts.dirPath] - Folder path to cut image.
      * @arg {string} [opts.name] - Name of cut image with element.
-     * @arg {string} [opts.cutDirPath] - Folder path to cut elements.
-     * @return {Promise&lt;string>} - Path to cut element image.
+     * @return {Promise&lt;string>} - Path to cut image.
      * @throws {AssertionError} - If original image doesn't exist.
      * @throws {AssertionError} - If DOM element is not registered in config.
      * @throws {AssertionError} - If cut image is not saved.
      */
     _cutElement: async function (imagePath, elementName, opts) {
 
-        expect(fs.existsSync(imagePath),
+        expect(this.__fs.existsSync(imagePath),
                `Image ${imagePath} doesn't exist`).be.true;
 
-        var element = await this.getElement(elementName);
+        var eLoc = await this.__getElementLocation(elementName, imagePath);
 
         opts = U.defVal(opts, {});
-        var targetName = U.defVal(opts.name, uuid()) + ".png";
+
+        var targetName = U.toKebab(U.defVal(opts.name, uuid()));
+        if (!targetName.endsWith(".png")) targetName += ".png";
 
         var targetPath = U.mkpath(
             U.defVal(
-                opts.cutDirPath,
-                path.resolve(getScreensDir(), "cutElements")),
-            targetName);
-
-        var imageInfo = await new Promise((resolve, reject) => {
-            sharp(imagePath).toBuffer((err, outputBuffer, info) => {
-                if (err) reject(err);
-                resolve(info);
-            });
-        });
-
-        var eLoc = await element.location();
-
-        if (eLoc.x &lt; 0) eLoc.x = 0;
-        if (eLoc.y &lt; 0) eLoc.y = 0;
-
-        if ((eLoc.x + eLoc.width) > imageInfo.width) {
-            eLoc.width = imageInfo.width - eLoc.x;
-        };
-        if ((eLoc.y + eLoc.height) > imageInfo.height) {
-            eLoc.height = imageInfo.height - eLoc.y;
-        };
+                opts.path,
+                path.resolve(
+                    U.defVal(opts.dirPath,
+                             path.resolve(getScreensDir(), "cut-elements")),
+                    targetName)));
 
         if (imagePath === targetPath) {
-            fs.renameSync(imagePath, imagePath + ".tmp");
+            this.__fs.renameSync(imagePath, imagePath + ".tmp");
             imagePath += ".tmp";
         };
 
         await new Promise((resolve, reject) => {
-            sharp(imagePath)
+            this.__sharp(imagePath)
                 .extract({ left: eLoc.x,
                            top: eLoc.y,
                            width: eLoc.width,
@@ -560,11 +545,40 @@ var ImageSteps = {
                 });
         });
 
-        expect(fs.existsSync(targetPath,
-                             `Image ${targetPath} isn't saved`)).be.true;
-        if (imagePath.endsWith(".tmp")) fs.unlinkSync(imagePath);
+        expect(this.__fs.existsSync(targetPath,
+                                    `Image ${targetPath} isn't saved`)).be.true;
+        if (imagePath.endsWith(".tmp")) this.__fs.unlinkSync(imagePath);
 
         return targetPath;
+    },
+    /**
+     * Helper to get element location.
+     *
+     * @ignore
+     * @async
+     * @method
+     * @private
+     * @instance
+     * @arg {string} name - Element name.
+     * @arg {string} imagePath - Path to image.
+     * @return {object} - Dict with `x`, `y`, `width`, `height` keys.
+     */
+    __getElementLocation: async function (name, imagePath) {
+
+        var element = await this.getElement(name);
+
+        var imageInfo = await new Promise((resolve, reject) => {
+            this.__sharp(imagePath).toBuffer((err, outputBuffer, info) => {
+                if (err) reject(err);
+                resolve(info);
+            });
+        });
+
+        imageInfo.x = 0;
+        imageInfo.y = 0;
+
+        var eLoc = await element.location();
+        return U.objOnScreenPos(eLoc, imageInfo);
     },
 };
 module.exports = ImageSteps;
@@ -623,7 +637,7 @@ var getScreensDir = () => {
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2017-12-31T16:14:43+02:00
+		on 2018-01-07T14:30:14+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
