@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "desktop-screenshot": "git+https://github.com/schipiga/node-desktop-screenshot.git",
-    "glace-utils": "^1.0.5",
+    "glace-utils": "^1.0.6",
     "image-diff": "^2.0.0",
     "lodash": "^4.17.4",
     "sharp": "^0.18.4",

@@ -142,4 +142,34 @@ scope("Steps", () => {
                 .to.be.equal("/image/dir/img.png");
         });
     });
+
+    test(".__getElementLocation()", () => {
+        var sharp, element, screen;
+
+        beforeChunk(() => {
+            element = { location: sinon.spy() };
+            screen = { width: 100, height: 100 };
+            sharp = {
+                toBuffer: sinon.spy(cb => cb(null, null, screen)),
+            };
+            sinon.stub(U, "objOnScreenPos");
+            sinon.stub(Steps, "__sharp").returns(sharp);
+            Steps.getElement = sinon.stub().returns(element);
+        });
+
+        afterChunk(() => {
+            U.objOnScreenPos.restore();
+            Steps.__sharp.restore();
+        });
+
+        chunk("gets element location", async () => {
+            await Steps.__getElementLocation();
+            expect(Steps.getElement.calledOnce).to.be.true;
+            expect(Steps.__sharp.calledOnce).to.be.true;
+            expect(sharp.toBuffer.calledOnce).to.be.true;
+            expect(element.location.calledOnce).to.be.true;
+            expect(U.objOnScreenPos.calledOnce).to.be.true;
+            expect(screen).to.include({ x: 0, y: 0, width: 100, height: 100 });
+        });
+    });
 });
