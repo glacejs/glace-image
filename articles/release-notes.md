@@ -1,3 +1,7 @@
+### v1.0.9
+
+- [Used](https://github.com/glacejs/glace-image/commit/38703d0db741c1dc028ca8b2bf0a5f3709e47b0c) docstring style in steps.
+
 ### v1.0.8
 
 - [Added](https://github.com/glacejs/glace-image/commit/1f3f5a7f89c56cb470d65f1225d8bbedb4603724) fixture and CLI option to capture screenshot on chunk failure.
