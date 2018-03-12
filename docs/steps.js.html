@@ -135,40 +135,42 @@ var ImageSteps = {
     __fs: fs,
     __screenshot: screenshot,
     __sharp: sharp,
-    /**
-     * Step to make screenshot of browser or display.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {object} [opts] - Step options.
-     * @arg {string} [opts.imageName] - Screenshot name. File extension
-     *  `.png` will be added automatically. Default value is dynamically
-     *  generated on each call with algorithm `uuid`.
-     * @arg {string} [opts.imageDirPath] - Screenshot folder path.
-     * @arg {boolean} [opts.by=selenium] - Screenshot variant. Supported
-     *  values are `selenium`, `html2canvas`, `system`.
-     * @arg {?string} [opts.cssSelector=null] - CSS selector of DOM element
-     *  which of screenshot should be made.
-     * @arg {?string} [opts.backColor=null] - Background color for html2canvas.
-     *  Transparent by default.
-     * @arg {?function} [opts.preHook=null] - Function which will be called
-     *  in `Steps` context in the beginning of step.
-     * @arg {?function} [opts.postHook=null] - Function which will be called
-     *  in `Steps` context at the end of step.
-     * @arg {?string} [opts.element=null] - Web element name which should be
-     *  screenshotted.
-     * @arg {boolean} [opts.check=true] - Flag to check screenshot is saved
-     *  or no.
-     * @return {Promise&lt;string>} Path to saved screenshot.
-     * @throws {AssertionError} If screenshot isn't saved.
-     * @example
-     *
-     * await SS.makeScreenshot(); // saves screenshot with generated file name
-     * await SS.makeScreenshot({ imageName: "my image" }); // saves screenshot with custom name
-     * await SS.makeScreenshot({ imageName: "my image", element: "searchButton" });
-     */
+
     makeScreenshot: async function (opts) {
+        /**
+         * Step to make screenshot of browser or display.
+         *
+         * @async
+         * @memberOf ImageSteps
+         * @method makeScreenshot
+         * @instance
+         * @arg {object} [opts] - Step options.
+         * @arg {string} [opts.imageName] - Screenshot name. File extension
+         *  `.png` will be added automatically. Default value is dynamically
+         *  generated on each call with algorithm `uuid`.
+         * @arg {string} [opts.imageDirPath] - Screenshot folder path.
+         * @arg {boolean} [opts.by=selenium] - Screenshot variant. Supported
+         *  values are `selenium`, `html2canvas`, `system`.
+         * @arg {?string} [opts.cssSelector=null] - CSS selector of DOM element
+         *  which of screenshot should be made.
+         * @arg {?string} [opts.backColor=null] - Background color for html2canvas.
+         *  Transparent by default.
+         * @arg {?function} [opts.preHook=null] - Function which will be called
+         *  in `Steps` context in the beginning of step.
+         * @arg {?function} [opts.postHook=null] - Function which will be called
+         *  in `Steps` context at the end of step.
+         * @arg {?string} [opts.element=null] - Web element name which should be
+         *  screenshotted.
+         * @arg {boolean} [opts.check=true] - Flag to check screenshot is saved
+         *  or no.
+         * @return {Promise&lt;string>} Path to saved screenshot.
+         * @throws {AssertionError} If screenshot isn't saved.
+         * @example
+         *
+         * await SS.makeScreenshot(); // saves screenshot with generated file name
+         * await SS.makeScreenshot({ imageName: "my image" }); // saves screenshot with custom name
+         * await SS.makeScreenshot({ imageName: "my image", element: "searchButton" });
+         */
 
         opts = U.defVal(opts, {});
 
@@ -220,29 +222,32 @@ var ImageSteps = {
         CONF.curTestCase.addScreenshot(imagePath);
         return imagePath;
     },
-    /**
-     * Step to check whether two image are equal or not equal.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {string} actualImage - Path to actual image.
-     * @arg {string} expectedImage - Path to expected image.
-     * @arg {object} [opts] - Helper options.
-     * @arg {number} [opts.threshold=0.05] - Threshold of divergence.
-     * @arg {boolean} [opts.shouldBe=true] - Flag to check whether
-     *  image are equal or not equal.
-     * @arg {string[]} [opts.elements=[]] - List of elements on image which
-     *  should be verified.
-     * @return {Promise&lt;void>}
-     * @throws {AssertionError} If result of images comparison doesn't pass
-     *  requested parameters.
-     * @example
-     *
-     * await SS.checkImagesEquivalence("./actual.png", "./expected.png");
-     * await SS.checkImagesEquivalence("./actual.png", "./expected.png", { shouldBe: false });
-     */
+
     checkImagesEquivalence: async function (actualImage, expectedImage, opts) {
+        /**
+         * Step to check whether two image are equal or not equal.
+         *
+         * @async
+         * @memberOf ImageSteps
+         * @method checkImagesEquivalence
+         * @instance
+         * @arg {string} actualImage - Path to actual image.
+         * @arg {string} expectedImage - Path to expected image.
+         * @arg {object} [opts] - Helper options.
+         * @arg {number} [opts.threshold=0.05] - Threshold of divergence.
+         * @arg {boolean} [opts.shouldBe=true] - Flag to check whether
+         *  image are equal or not equal.
+         * @arg {string[]} [opts.elements=[]] - List of elements on image which
+         *  should be verified.
+         * @return {Promise&lt;void>}
+         * @throws {AssertionError} If result of images comparison doesn't pass
+         *  requested parameters.
+         * @example
+         *
+         * await SS.checkImagesEquivalence("./actual.png", "./expected.png");
+         * await SS.checkImagesEquivalence("./actual.png", "./expected.png", { shouldBe: false });
+         */
+
         opts = U.defVal(opts, {});
         var elements = U.defVal(opts.elements, []);
 
@@ -256,28 +261,30 @@ var ImageSteps = {
                 actualElImage, expectedElImage, opts);
         };
     },
-    /**
-     * Step to check one image includes or doesn't include another image.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {string} fullImage - Path to image which may include.
-     * @arg {string} includedImage - Path to image which may be included.
-     * @arg {object} [opts] - Step options.
-     * @arg {object} [opts.matchedDirPath] - Folder path to save matched image.
-     * @arg {number} [opts.threshold=0.05] - Threshold of divergence.
-     * @arg {boolean} [opts.shouldBe=true] - Flag to check whether
-     *  image are equal or not equal.
-     * @return {Promise&lt;void>}
-     * @throws {AssertionError} If result of images inclusion doesn't pass
-     *  requested parameters.
-     * @example
-     *
-     * await SS.checkImageInclusion("./full.png", "./part.png");
-     * await SS.checkImageInclusion("./full.png", "./part.png", { shouldBe: false });
-     */
+
     checkImageInclusion: async function (fullImage, includedImage, opts) {
+        /**
+         * Step to check one image includes or doesn't include another image.
+         *
+         * @async
+         * @memberOf ImageSteps
+         * @method checkImageInclusion
+         * @instance
+         * @arg {string} fullImage - Path to image which may include.
+         * @arg {string} includedImage - Path to image which may be included.
+         * @arg {object} [opts] - Step options.
+         * @arg {object} [opts.matchedDirPath] - Folder path to save matched image.
+         * @arg {number} [opts.threshold=0.05] - Threshold of divergence.
+         * @arg {boolean} [opts.shouldBe=true] - Flag to check whether
+         *  image are equal or not equal.
+         * @return {Promise&lt;void>}
+         * @throws {AssertionError} If result of images inclusion doesn't pass
+         *  requested parameters.
+         * @example
+         *
+         * await SS.checkImageInclusion("./full.png", "./part.png");
+         * await SS.checkImageInclusion("./full.png", "./part.png", { shouldBe: false });
+         */
 
         opts = U.defVal(opts, {});
         var threshold = U.defVal(opts.threshold, 0.05);
@@ -306,39 +313,42 @@ var ImageSteps = {
                 .be.false;
         };
     },
-    /**
-     * Step to check or make screenshot of browser or display.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {string} imageName - Screenshot name. File extension
-     *  `.png` will be added automatically.
-     * @arg {object} [opts] - Step options.
-     * @arg {string} [opts.imageDirPath] - Screenshot folder path.
-     * @arg {string} [opts.expectedDirPath] - Expected screenshot path.
-     * @arg {boolean} [opts.by=selenium] - Screenshot variant. Supported
-     *  values are `selenium`, `html2canvas`, `system`.
-     * @arg {?string} [opts.cssSelector=null] - CSS selector of DOM element
-     *  which of screenshot should be made.
-     * @arg {?string} [opts.backColor=null] - Background color for html2canvas.
-     *  Transparent by default.
-     * @arg {?function} [opts.preHook=null] - Function which will be called
-     *  in `Steps` context in the beginning of step.
-     * @arg {?function} [opts.postHook=null] - Function which will be called
-     *  in `Steps` context at the end of step.
-     * @arg {string[]} [opts.elements=[]] - List of elements on image which
-     *  should be verified.
-     * @arg {boolean} [opts.check=true] - Flag to check screenshot is saved
-     *  or no.
-     * @return {Promise&lt;void>}
-     * @throws {AssertionError} If screenshot isn't saved.
-     * @example
-     *
-     * await SS.checkOrMakeScreenshot("my image");
-     * await SS.checkOrMakeScreenshot("my image", { by: "html2canvas" });
-     */
+
     checkOrMakeScreenshot: async function (imageName, opts) {
+        /**
+         * Step to check or make screenshot of browser or display.
+         *
+         * @async
+         * @memberOf ImageSteps
+         * @method checkOrMakeScreenshot
+         * @instance
+         * @arg {string} imageName - Screenshot name. File extension
+         *  `.png` will be added automatically.
+         * @arg {object} [opts] - Step options.
+         * @arg {string} [opts.imageDirPath] - Screenshot folder path.
+         * @arg {string} [opts.expectedDirPath] - Expected screenshot path.
+         * @arg {boolean} [opts.by=selenium] - Screenshot variant. Supported
+         *  values are `selenium`, `html2canvas`, `system`.
+         * @arg {?string} [opts.cssSelector=null] - CSS selector of DOM element
+         *  which of screenshot should be made.
+         * @arg {?string} [opts.backColor=null] - Background color for html2canvas.
+         *  Transparent by default.
+         * @arg {?function} [opts.preHook=null] - Function which will be called
+         *  in `Steps` context in the beginning of step.
+         * @arg {?function} [opts.postHook=null] - Function which will be called
+         *  in `Steps` context at the end of step.
+         * @arg {string[]} [opts.elements=[]] - List of elements on image which
+         *  should be verified.
+         * @arg {boolean} [opts.check=true] - Flag to check screenshot is saved
+         *  or no.
+         * @return {Promise&lt;void>}
+         * @throws {AssertionError} If screenshot isn't saved.
+         * @example
+         *
+         * await SS.checkOrMakeScreenshot("my image");
+         * await SS.checkOrMakeScreenshot("my image", { by: "html2canvas" });
+         */
+
         imageName = U.toKebab(imageName);
 
         opts = U.defVal(opts, {});
@@ -681,7 +691,7 @@ var getScreensDir = () => {
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-12T21:41:23+02:00
+		on 2018-03-12T23:44:56+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
