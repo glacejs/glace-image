@@ -119,12 +119,12 @@
 var fs = require("fs");
 var path = require("path");
 
-var _ = require("lodash");
 var imageDiff = require("image-diff");
 var screenshot = require("desktop-screenshot");
 var sharp = require("sharp");
 var uuid = require("uuid/v4");
 var U = require("glace-utils");
+var LOG = U.logger;
 
 require("./fixtures");
 var image = require("./image");
@@ -192,6 +192,8 @@ var ImageSteps = {
 
         expect(["selenium", "html2canvas", "system"]).to.include(by);
 
+        LOG.info(`Making screenshot with ${by}...`);
+
         if (preHook) await preHook.call(this);
 
         if (by === "selenium") {
@@ -211,15 +213,18 @@ var ImageSteps = {
 
         if (check) {
             expect(fs.existsSync(imagePath),
-                   `Screenshot isn't saved to '${imagePath}'`).to.be.true;
+                `Screenshot isn't saved to '${imagePath}'`).to.be.true;
 
             expect(await image(imagePath).isTransparent(),
-                   `Screenshot '${imagePath}' has empty content`).to.be.false;
+                `Screenshot '${imagePath}' has empty content`).to.be.false;
         };
 
         if (postHook) await postHook.call(this);
 
         CONF.curTestCase.addScreenshot(imagePath);
+
+        LOG.info(`Screenshot is saved to ${imagePath}`);
+
         return imagePath;
     },
 
@@ -251,6 +256,8 @@ var ImageSteps = {
         opts = U.defVal(opts, {});
         var elements = U.defVal(opts.elements, []);
 
+        LOG.info("Checking images equivalence...");
+
         await this._checkImagesEquivalence(actualImage, expectedImage, opts);
         for (var element of elements) {
             var actualElImage = await this._cutElement(
@@ -260,6 +267,8 @@ var ImageSteps = {
             await this._checkImagesEquivalence(
                 actualElImage, expectedElImage, opts);
         };
+
+        LOG.info("Images equivalence is checked");
     },
 
     checkImageInclusion: async function (fullImage, includedImage, opts) {
@@ -296,22 +305,23 @@ var ImageSteps = {
                 path.resolve(getScreensDir(), "inclusions")),
             uuid() + ".png");
 
-        var errMsg = "Image " + fullImage +
-                     " doesn't contain image " + includedImage;
+        LOG.info("Checking images inclusion...");
 
         var result = await image(fullImage)
             .includes(includedImage, { tolerance: threshold,
-                                       matchedPath: matchedImagePath });
+                matchedPath: matchedImagePath });
 
         if (shouldBe) {
             expect(result.isIncluded,
-                   `Image ${fullImage} doesn't include ${includedImage}`)
+                `Image ${fullImage} doesn't include ${includedImage}`)
                 .be.true;
         } else {
             expect(result.isIncluded,
-                   `Image ${fullImage} includes image ${includedImage}`)
+                `Image ${fullImage} includes image ${includedImage}`)
                 .be.false;
         };
+
+        LOG.info("Images inclusion is checked");
     },
 
     checkOrMakeScreenshot: async function (imageName, opts) {
@@ -356,7 +366,7 @@ var ImageSteps = {
         var actualImage = await this.makeScreenshot(opts);
 
         if (CONF.compareImages) {
-            testName = CONF.curTestCase ? U.toKebab(CONF.curTestCase.name) : "";
+            var testName = CONF.curTestCase ? U.toKebab(CONF.curTestCase.name) : "";
 
             var expectedImage = path.resolve(
                 U.defVal(
@@ -392,11 +402,11 @@ var ImageSteps = {
     _checkImagesEquivalence: async function (actualImage, expectedImage, opts) {
 
         expect(fs.existsSync(actualImage),
-               `Actual image '${actualImage}' doesn't exist`)
+            `Actual image '${actualImage}' doesn't exist`)
             .to.be.true;
 
         expect(fs.existsSync(expectedImage),
-               `Expected image '${expectedImage}' doesn't exist`)
+            `Expected image '${expectedImage}' doesn't exist`)
             .to.be.true;
 
         opts = U.defVal(opts, {});
@@ -424,10 +434,10 @@ var ImageSteps = {
 
         if (shouldBe) {
             expect(percentage,
-                   "Images are not equal").be.lte(threshold);
+                "Images are not equal").be.lte(threshold);
         } else {
             expect(percentage,
-                   "Images are equal").be.gte(threshold);
+                "Images are equal").be.gte(threshold);
         };
     },
     /**
@@ -495,10 +505,11 @@ var ImageSteps = {
         await this.webdriver.execute(function (cssSelector, backColor) {
 
             function makeScreenshot () {
+                var element;
                 if (cssSelector) {
-                    var element = document.querySelector(cssSelector);
+                    element = document.querySelector(cssSelector);
                 } else {
-                    var element = document.body;
+                    element = document.body;
                 };
                 html2canvas(
                     element,
@@ -506,10 +517,10 @@ var ImageSteps = {
                         backgroundColor: backColor,
                         useCORS: true  // capture images from another domains
                     }).then(function (canvas) {
-                        window.__screenshot = canvas
-                            .toDataURL()
-                            .split("data:image/png;base64,")[1];
-                    });
+                    window.__screenshot = canvas
+                        .toDataURL()
+                        .split("data:image/png;base64,")[1];
+                });
             };
 
             if (typeof(html2canvas) !== "undefined") {
@@ -527,15 +538,14 @@ var ImageSteps = {
         var screenBase64 = await this.webdriver.waitUntil(async () => {
 
             return (await this.webdriver.execute(function () {
-
+                var result;
                 if (window.__screenshot) {
-                    var result = window.__screenshot;
+                    result = window.__screenshot;
                     delete window.__screenshot;
-                    return result;
                 } else {
-                    return false;
+                    result = false;
                 };
-
+                return result;
             })).value;
 
         }, timeout, errMsg);
@@ -564,7 +574,7 @@ var ImageSteps = {
     _cutElement: async function (imagePath, elementName, opts) {
 
         expect(this.__fs.existsSync(imagePath),
-               `Image ${imagePath} doesn't exist`).be.true;
+            `Image ${imagePath} doesn't exist`).be.true;
 
         var eLoc = await this.__getElementLocation(elementName, imagePath);
 
@@ -578,7 +588,7 @@ var ImageSteps = {
                 opts.path,
                 path.resolve(
                     U.defVal(opts.dirPath,
-                             path.resolve(getScreensDir(), "cut-elements")),
+                        path.resolve(getScreensDir(), "cut-elements")),
                     targetName)));
 
         if (imagePath === targetPath) {
@@ -589,9 +599,9 @@ var ImageSteps = {
         await new Promise((resolve, reject) => {
             this.__sharp(imagePath)
                 .extract({ left: eLoc.x,
-                           top: eLoc.y,
-                           width: eLoc.width,
-                           height: eLoc.height })
+                    top: eLoc.y,
+                    width: eLoc.width,
+                    height: eLoc.height })
                 .crop(sharp.strategy.entropy)
                 .toFile(targetPath, err => {
                     if (err) reject(err);
@@ -600,7 +610,7 @@ var ImageSteps = {
         });
 
         expect(this.__fs.existsSync(targetPath,
-                                    `Image ${targetPath} isn't saved`)).be.true;
+            `Image ${targetPath} isn't saved`)).be.true;
         if (imagePath.endsWith(".tmp")) this.__fs.unlinkSync(imagePath);
 
         return targetPath;
@@ -691,7 +701,7 @@ var getScreensDir = () => {
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-03-12T23:44:56+02:00
+		on 2018-03-23T22:38:23+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
