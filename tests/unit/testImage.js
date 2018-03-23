@@ -8,9 +8,9 @@ scope("Image", () => {
     beforeChunk(() => {
         sharpObj = {
             metadata: sinon.spy(() => Promise.resolve({ hasAlpha: true,
-                                                        channels: 4,
-                                                        width: 800,
-                                                        height: 600 })),
+                channels: 4,
+                width: 800,
+                height: 600 })),
             resize: sinon.spy(() => sharpObj),
             raw: sinon.spy(() => sharpObj),
             extract: sinon.spy(() => sharpObj),
@@ -19,8 +19,8 @@ scope("Image", () => {
         };
 
         image = new Image("/path/to/image.png",
-                          undefined,
-                          { sharp: sinon.stub().returns(sharpObj) });
+            undefined,
+            { sharp: sinon.stub().returns(sharpObj) });
         image._tolerance = 0.05;
     });
 
@@ -113,10 +113,10 @@ scope("Image", () => {
 
         chunk("includes image", async () => {
             image._includes = sinon.stub().returns({ isIncluded: true,
-                                                     offsetX: 0,
-                                                     offsetY: 0,
-                                                     width: 1,
-                                                     height: 1 });
+                offsetX: 0,
+                offsetY: 0,
+                width: 1,
+                height: 1 });
             image._saveMatchImage = sinon.spy(() => Promise.resolve());
 
             var res = await image.includes(
@@ -139,7 +139,7 @@ scope("Image", () => {
 
         chunk("loads image", async () => {
             var res = await image._loadImg("/path/to/img.png",
-                                           { scaleX: 1, scaleY: 1 });
+                { scaleX: 1, scaleY: 1 });
 
             expect(res.width).to.be.equal(800);
             expect(res.height).to.be.equal(600);
@@ -153,7 +153,7 @@ scope("Image", () => {
 
         chunk("saves matched image", async () => {
             image._matchedPath = "/path/to/matched.png";
-            var res = await image._saveMatchImage(1, 2, 3, 4);
+            await image._saveMatchImage(1, 2, 3, 4);
 
             expect(image.__sharp.calledOnce).to.be.true;
             expect(image.__sharp.args[0][0]).to.be.equal(image._srcPath);
@@ -202,7 +202,7 @@ scope("Image", () => {
 
         chunk("gets used pixels", () => {
             var pixels = [[{ R: 0, G: 0, B: 0, A: 0 }],
-                          [{ R: 0, G: 0, B: 0, A: 255 }]];
+                [{ R: 0, G: 0, B: 0, A: 255 }]];
             var res = image._getUsedPixels(pixels);
 
             expect(res).to.have.length(1);
@@ -271,8 +271,8 @@ scope("Image", () => {
     test("._cropPixels()", () => {
         chunk("crops pixels", () => {
             var pixels = [[{ R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }],
-                          [{ R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 1 }, { R: 1, G: 1, B: 1, A: 0 }],
-                          [{ R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }]];
+                [{ R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 1 }, { R: 1, G: 1, B: 1, A: 0 }],
+                [{ R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }, { R: 1, G: 1, B: 1, A: 0 }]];
 
             var res = image._cropPixels(pixels)[0][0];
             for (var c of ["R", "G", "B", "A"]) expect(res[c]).to.be.equal(1);
