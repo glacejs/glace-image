@@ -1,3 +1,8 @@
+### v1.1.0
+
+- [Added](https://github.com/glacejs/glace-image/commit/6e1b864d6a7e3d352ca54f5f91974fe142bfa0dc) project workflow commands.
+- [Logged](https://github.com/glacejs/glace-image/commit/81376b3d9a70a61d67e8261ebe0453ffb88bb3c4) steps.
+
 ### v1.0.9
 
 - [Used](https://github.com/glacejs/glace-image/commit/38703d0db741c1dc028ca8b2bf0a5f3709e47b0c) docstring style in steps.
