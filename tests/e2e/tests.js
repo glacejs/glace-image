@@ -5,7 +5,7 @@ var Page = require("glace-web").Page;
 var indexPage = new Page(
     "index", "/",
     { searchField: "input#text",
-      searchButton: "button.button_theme_websearch[type='submit']"});
+        searchButton: "button.button_theme_websearch[type='submit']"});
 
 CONF.web.url = "https://yandex.ru";
 

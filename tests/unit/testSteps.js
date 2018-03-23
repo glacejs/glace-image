@@ -130,7 +130,7 @@ scope("Steps", () => {
 
         chunk("cuts element to the same file", async () => {
             expect(await Steps._cutElement("/image/path", "element",
-                                           { path: "/image/path" }))
+                { path: "/image/path" }))
                 .to.be.equal("/image/path");
             expect(Steps.__fs.renameSync.calledOnce).to.be.true;
             expect(Steps.__fs.unlinkSync.calledOnce).to.be.true;
@@ -138,7 +138,7 @@ scope("Steps", () => {
 
         chunk("cuts element with specified dir and name", async () => {
             expect(await Steps._cutElement("/image/path", "element",
-                                           { dirPath: "/image/dir", name: "img.png" }))
+                { dirPath: "/image/dir", name: "img.png" }))
                 .to.be.equal("/image/dir/img.png");
         });
     });
