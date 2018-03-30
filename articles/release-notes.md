@@ -1,3 +1,7 @@
+### v1.1.1
+
+- [Added](https://github.com/glacejs/glace-image/commit/27ae8bd2d0abc63c65e1eafc47d0bd910f6a6bbd) dynamic switching between screenshot variants.
+
 ### v1.1.0
 
 - [Added](https://github.com/glacejs/glace-image/commit/6e1b864d6a7e3d352ca54f5f91974fe142bfa0dc) project workflow commands.
