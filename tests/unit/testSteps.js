@@ -20,9 +20,9 @@ scope("Steps", () => {
             ctx._displayScreenshot = sinon.spy();
         });
 
-        chunk("is taken via selenium by default", async () => {
+        chunk("is taken via system by default", async () => {
             await ctx.makeScreenshot({ check: false });
-            expect(ctx._seleniumScreenshot.calledOnce).to.be.true;
+            expect(ctx._displayScreenshot.calledOnce).to.be.true;
         });
         chunk("is taken via selenium", async () => {
             await ctx.makeScreenshot({ by: "selenium", check: false });
