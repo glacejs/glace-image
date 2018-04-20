@@ -61,3 +61,23 @@ test("Images processing", null, [fxKillWebdriver, fxSelenium, fxWebdriver, fxBro
         await SS.makeScreenshot({ by: "system" });
     });
 });
+
+test("Image resizing", () => {
+    var imgPath;
+
+    beforeChunk(async () => {
+        imgPath = await SS.makeScreenshot();
+    });
+
+    chunk("with common percent", async () => {
+        await SS.resizeImage(imgPath, "75%");
+    });
+
+    chunk("with percent dimensions", async () => {
+        await SS.resizeImage(imgPath, { width: "150%", height: "125%" });
+    });
+
+    chunk("with pixel dimensions", async () => {
+        await SS.resizeImage(imgPath, { width: 800, height: 600 });
+    });
+});
