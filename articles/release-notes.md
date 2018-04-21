@@ -1,3 +1,7 @@
+### v1.2.1
+
+- [Removed](https://github.com/glacejs/glace-image/commit/c24206ae350afcc1f7354ea370e3fda3a9ba7d5c) image magick configuration.
+
 ### v1.2.0
 
 - [Added](https://github.com/glacejs/glace-image/commit/794d89e43a524528794ea736a472b9ec286339f2) step to resize image.
