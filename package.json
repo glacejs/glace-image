@@ -1,10 +1,11 @@
 {
   "name": "glace-image",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "GlaceJS Image plugin",
   "main": "lib/index.js",
   "scripts": {
     "ci": "npm run lint && npm run test:unit",
+    "release": "f(){ git add -u && git commit -m \"release $1\" && git tag $1 && git push origin $1 && npm run docs:publish && npm publish; };f",
     "docs": "rm -rf docs && jsdoc -c jsdoc.json -d docs",
     "docs:publish": "npm run docs && git add docs && git commit -m \"update docs\" && git push origin master",
     "lint": "eslint lib tests",

@@ -1,3 +1,8 @@
+### v1.2.0
+
+- [Added](https://github.com/glacejs/glace-image/commit/794d89e43a524528794ea736a472b9ec286339f2) step to resize image.
+- [Removed](https://github.com/glacejs/glace-image/commit/a78870f63116a2170314fd000773483586a8d6fe) image-diff and binary dependencies.
+
 ### v1.1.1
 
 - [Added](https://github.com/glacejs/glace-image/commit/27ae8bd2d0abc63c65e1eafc47d0bd910f6a6bbd) dynamic switching between screenshot variants.
