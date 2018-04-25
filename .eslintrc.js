@@ -22,6 +22,7 @@ module.exports = {
         "fxKillWebdriver": true,
         "fxBrowser": true,
         "fxSelenium": true,
+        "fxScreenOnFail": true,
         "document": true,
         "window": true,
         "html2canvas": true
