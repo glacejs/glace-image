@@ -2,40 +2,55 @@
 
 var U = require("glace-utils");
 
-var Steps = require("../../lib").Steps;
+var Steps = rewire("../../lib/steps");
 
 scope("Steps", () => {
-    var ctx;
+    var ctx,
+        _fs,
+        _image,
+        sandbox = sinon.createSandbox();
 
     beforeChunk(() => {
         ctx = {};
+        _fs = Steps.__get__("fs");
+    });
+
+    afterChunk(() => {
+        sandbox.restore();
+        Steps.__reset__();
     });
 
     test(".makeScreenshot()", () => {
 
         beforeChunk(() => {
             ctx.makeScreenshot = Steps.makeScreenshot;
-            ctx._seleniumScreenshot = sinon.spy();
-            ctx._canvasScreenshot = sinon.spy();
-            ctx._displayScreenshot = sinon.spy();
+            ctx._displayScreenshot = sinon.stub();
+            sandbox.stub(_fs, "existsSync").returns(true);
+
+            _image = () => {
+                return {
+                    isTransparent: sinon.stub().returns(false),
+                };
+            };
+            Steps.__set__("image", _image);
         });
 
-        chunk("is taken via system by default", async () => {
-            await ctx.makeScreenshot({ check: false });
-            expect(ctx._displayScreenshot.calledOnce).to.be.true;
+        chunk("uses default options", async () => {
+            await ctx.makeScreenshot();
         });
-        chunk("is taken via selenium", async () => {
-            await ctx.makeScreenshot({ by: "selenium", check: false });
-            expect(ctx._seleniumScreenshot.calledOnce).to.be.true;
-        });
-        chunk("is taken via html2canvas", async () => {
-            await ctx.makeScreenshot({ by: "html2canvas", check: false });
-            expect(ctx._canvasScreenshot.calledOnce).to.be.true;
-        });
-        chunk("is taken via system display", async () => {
-            await ctx.makeScreenshot({ by: "system", check: false });
-            expect(ctx._displayScreenshot.calledOnce).to.be.true;
-        });
+        chunk("uses custom image name", () => false);
+        chunk("uses custom image dir path", () => false);
+        chunk("chooses selenium for screencapture", () => false);
+        chunk("fails on invalid type of screepcapture", () => false);
+        chunk("calls prehook if it is provided", () => false);
+        chunk("uses selenium for screencapture", () => false);
+        chunk("uses system for screencapture", () => false);
+        chunk("uses html2canvas for screencapture", () => false);
+        chunk("cuts element from screenshot if it is provided", () => false);
+        chunk("skips image verification if check is disabled", () => false);
+        chunk("raises error if image is not saved", () => false);
+        chunk("raises error if image has no content", () => false);
+        chunk("calls posthook if it is provided", () => false);
     });
 
     test(".checkImagesEquivalence()", () => {
