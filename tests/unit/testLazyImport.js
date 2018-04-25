@@ -17,4 +17,8 @@ test("Plugin lazy import", () => {
     chunk("has steps", () => {
         expect(glaceImage.Steps).to.exist;
     });
+
+    chunk("has plugin help", () => {
+        expect(glaceImage.pluginHelp).to.exist;
+    });
 });
