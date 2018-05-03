@@ -25,6 +25,7 @@ module.exports = {
         "fxScreenOnFail": true,
         "document": true,
         "window": true,
+        "allure": true,
         "html2canvas": true
     },
     "extends": "eslint:recommended",
