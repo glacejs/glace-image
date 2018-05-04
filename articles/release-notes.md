@@ -1,3 +1,7 @@
+### v1.2.2
+
+- [Added](https://github.com/glacejs/glace-image/commit/2fb8b1821466b82e855449bce6e060af7c8f2799) [allure](https://docs.qameta.io/allure/) steps.
+
 ### v1.2.1
 
 - [Removed](https://github.com/glacejs/glace-image/commit/c24206ae350afcc1f7354ea370e3fda3a9ba7d5c) image magick configuration.
