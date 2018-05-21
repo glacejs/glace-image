@@ -1,3 +1,7 @@
+### v1.2.3
+
+- [Added](https://github.com/glacejs/glace-image/commit/000ee0702c799ef5cd45578728d5fd89b3ff030b) image paths to error messages in image checks.
+
 ### v1.2.2
 
 - [Added](https://github.com/glacejs/glace-image/commit/2fb8b1821466b82e855449bce6e060af7c8f2799) [allure](https://docs.qameta.io/allure/) steps.
