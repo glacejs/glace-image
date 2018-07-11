@@ -1,3 +1,7 @@
+### v1.2.5
+
+- Migrated to new `glace-core`.
+
 ### v1.2.4
 
 - Updated dependencies.
