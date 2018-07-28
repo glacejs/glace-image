@@ -1,0 +1,341 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "fixtures",
+    "children" : [ {
+      "name" : "fxScreenOnFail",
+      "uid" : "182b4a390a7a794",
+      "parentUid" : "555dc0dfcc2bfb752b17e4305890e08b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374093,
+        "stop" : 1532764374529,
+        "duration" : 436
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "afterCb",
+      "uid" : "5a1c7b03d037370d",
+      "parentUid" : "555dc0dfcc2bfb752b17e4305890e08b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374530,
+        "stop" : 1532764374547,
+        "duration" : 17
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "555dc0dfcc2bfb752b17e4305890e08b"
+  }, {
+    "name" : "Image",
+    "children" : [ {
+      "name" : "instance",
+      "uid" : "156c7726f321b1c",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374559,
+        "stop" : 1532764374564,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".isTransparent()",
+      "uid" : "d7096b4b0f67b34e",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374564,
+        "stop" : 1532764374568,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".isMonochrome()",
+      "uid" : "21e53a249ce91a63",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374568,
+        "stop" : 1532764374572,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".isBlack()",
+      "uid" : "5381e157fa8c96bd",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374572,
+        "stop" : 1532764374576,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".isWhite()",
+      "uid" : "89faa11499ab2cf8",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374576,
+        "stop" : 1532764374580,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".includes()",
+      "uid" : "bbe036655bba130d",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374580,
+        "stop" : 1532764374585,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._loadImg()",
+      "uid" : "f0b5ba7a872a9723",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374586,
+        "stop" : 1532764374590,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._saveMatchImage()",
+      "uid" : "9e01742f56d09bc3",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374590,
+        "stop" : 1532764374597,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._includes()",
+      "uid" : "9eaf3196bbae2eea",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374597,
+        "stop" : 1532764374602,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._getUsedPixels()",
+      "uid" : "78bec832f661ffaa",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374602,
+        "stop" : 1532764374605,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._getDiffValue()",
+      "uid" : "892109627b27e787",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374605,
+        "stop" : 1532764374607,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._isPixelUsed()",
+      "uid" : "3accd33a75d67cb8",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374607,
+        "stop" : 1532764374610,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._isPixelTolerant()",
+      "uid" : "b6717bc9fbdcdd41",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374610,
+        "stop" : 1532764374612,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._getPixels()",
+      "uid" : "f25a635a9bc7e041",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374613,
+        "stop" : 1532764374619,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._cropPixels()",
+      "uid" : "9d1d232e26efe969",
+      "parentUid" : "1929a5cf61c08afe54db535b44c0094e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374619,
+        "stop" : 1532764374622,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1929a5cf61c08afe54db535b44c0094e"
+  }, {
+    "name" : "import",
+    "children" : [ {
+      "name" : "Plugin lazy import",
+      "uid" : "d7c782f7ad4fa6d3",
+      "parentUid" : "105c7049c8d655de1a558dc7a386cc46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374631,
+        "stop" : 1532764374634,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "105c7049c8d655de1a558dc7a386cc46"
+  }, {
+    "name" : "help",
+    "children" : [ {
+      "name" : "plugin help contains option",
+      "uid" : "e114ebeb45790132",
+      "parentUid" : "a1b7a8b27fa95c674e957966038f374c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374636,
+        "stop" : 1532764374637,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a1b7a8b27fa95c674e957966038f374c"
+  }, {
+    "name" : "Steps",
+    "children" : [ {
+      "name" : ".makeScreenshot()",
+      "uid" : "f3a4634b0ff12367",
+      "parentUid" : "bc1de0a6a92f2257a8469242147b4770",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374638,
+        "stop" : 1532764374648,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".checkImagesEquivalence()",
+      "uid" : "cd1feee6cda9033",
+      "parentUid" : "bc1de0a6a92f2257a8469242147b4770",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374648,
+        "stop" : 1532764374651,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._displayScreenshot()",
+      "uid" : "c5d0dbb57b5d81bc",
+      "parentUid" : "bc1de0a6a92f2257a8469242147b4770",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374651,
+        "stop" : 1532764374653,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._cutElement()",
+      "uid" : "48e49a10eafdcdce",
+      "parentUid" : "bc1de0a6a92f2257a8469242147b4770",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374654,
+        "stop" : 1532764374668,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".__getElementLocation()",
+      "uid" : "db62ea570b16f426",
+      "parentUid" : "bc1de0a6a92f2257a8469242147b4770",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374668,
+        "stop" : 1532764374679,
+        "duration" : 11
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bc1de0a6a92f2257a8469242147b4770"
+  }, {
+    "name" : "e2e tests",
+    "children" : [ {
+      "name" : "Images processing",
+      "uid" : "bb2814b9caa0ea0c",
+      "parentUid" : "845c5136639cb09c31b37113a47fbb74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764374688,
+        "stop" : 1532764398816,
+        "duration" : 24128
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Image resizing",
+      "uid" : "a5a38c635a00417a",
+      "parentUid" : "845c5136639cb09c31b37113a47fbb74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1532764398816,
+        "stop" : 1532764400272,
+        "duration" : 1456
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "845c5136639cb09c31b37113a47fbb74"
+  } ],
+  "name" : "suites"
+}
