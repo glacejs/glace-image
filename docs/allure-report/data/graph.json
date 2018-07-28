@@ -1,260 +1,260 @@
 [ {
-  "uid" : "bbe036655bba130d",
-  "name" : ".includes()",
+  "uid" : "ceab354b4d3a6829",
+  "name" : "fxScreenOnFail",
   "time" : {
-    "start" : 1532764374580,
-    "stop" : 1532764374585,
-    "duration" : 5
+    "start" : 1532776185327,
+    "stop" : 1532776185782,
+    "duration" : 455
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "89faa11499ab2cf8",
-  "name" : ".isWhite()",
+  "uid" : "18f13531a8ca10e2",
+  "name" : "._cropPixels()",
   "time" : {
-    "start" : 1532764374576,
-    "stop" : 1532764374580,
+    "start" : 1532776185872,
+    "stop" : 1532776185875,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "880cb0dc0d611fd",
+  "name" : "._cutElement()",
+  "time" : {
+    "start" : 1532776185913,
+    "stop" : 1532776185926,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2773d91ae24a57e3",
+  "name" : "._isPixelUsed()",
+  "time" : {
+    "start" : 1532776185856,
+    "stop" : 1532776185860,
     "duration" : 4
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9d1d232e26efe969",
-  "name" : "._cropPixels()",
-  "time" : {
-    "start" : 1532764374619,
-    "stop" : 1532764374622,
-    "duration" : 3
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "892109627b27e787",
-  "name" : "._getDiffValue()",
-  "time" : {
-    "start" : 1532764374605,
-    "stop" : 1532764374607,
-    "duration" : 2
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f25a635a9bc7e041",
-  "name" : "._getPixels()",
-  "time" : {
-    "start" : 1532764374613,
-    "stop" : 1532764374619,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f3a4634b0ff12367",
-  "name" : ".makeScreenshot()",
-  "time" : {
-    "start" : 1532764374638,
-    "stop" : 1532764374648,
-    "duration" : 10
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9eaf3196bbae2eea",
+  "uid" : "bf5fe890467b1442",
   "name" : "._includes()",
   "time" : {
-    "start" : 1532764374597,
-    "stop" : 1532764374602,
+    "start" : 1532776185846,
+    "stop" : 1532776185851,
     "duration" : 5
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a5a38c635a00417a",
-  "name" : "Image resizing",
-  "time" : {
-    "start" : 1532764398816,
-    "stop" : 1532764400272,
-    "duration" : 1456
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3accd33a75d67cb8",
-  "name" : "._isPixelUsed()",
-  "time" : {
-    "start" : 1532764374607,
-    "stop" : 1532764374610,
-    "duration" : 3
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c5d0dbb57b5d81bc",
-  "name" : "._displayScreenshot()",
-  "time" : {
-    "start" : 1532764374651,
-    "stop" : 1532764374653,
-    "duration" : 2
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b6717bc9fbdcdd41",
-  "name" : "._isPixelTolerant()",
-  "time" : {
-    "start" : 1532764374610,
-    "stop" : 1532764374612,
-    "duration" : 2
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e114ebeb45790132",
-  "name" : "plugin help contains option",
-  "time" : {
-    "start" : 1532764374636,
-    "stop" : 1532764374637,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb2814b9caa0ea0c",
-  "name" : "Images processing",
-  "time" : {
-    "start" : 1532764374688,
-    "stop" : 1532764398816,
-    "duration" : 24128
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "156c7726f321b1c",
-  "name" : "instance",
-  "time" : {
-    "start" : 1532764374559,
-    "stop" : 1532764374564,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "db62ea570b16f426",
-  "name" : ".__getElementLocation()",
-  "time" : {
-    "start" : 1532764374668,
-    "stop" : 1532764374679,
-    "duration" : 11
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5a1c7b03d037370d",
+  "uid" : "fc61a63ea6428897",
   "name" : "afterCb",
   "time" : {
-    "start" : 1532764374530,
-    "stop" : 1532764374547,
+    "start" : 1532776185783,
+    "stop" : 1532776185800,
     "duration" : 17
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5381e157fa8c96bd",
-  "name" : ".isBlack()",
+  "uid" : "310a2af9ee94e895",
+  "name" : "Images processing",
   "time" : {
-    "start" : 1532764374572,
-    "stop" : 1532764374576,
-    "duration" : 4
+    "start" : 1532776185939,
+    "stop" : 1532776216336,
+    "duration" : 30397
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "48e49a10eafdcdce",
-  "name" : "._cutElement()",
+  "uid" : "d8121bee47473f1a",
+  "name" : ".includes()",
   "time" : {
-    "start" : 1532764374654,
-    "stop" : 1532764374668,
-    "duration" : 14
+    "start" : 1532776185834,
+    "stop" : 1532776185839,
+    "duration" : 5
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9e01742f56d09bc3",
-  "name" : "._saveMatchImage()",
+  "uid" : "e74ccd92151000d9",
+  "name" : "._getPixels()",
   "time" : {
-    "start" : 1532764374590,
-    "stop" : 1532764374597,
+    "start" : 1532776185865,
+    "stop" : 1532776185872,
     "duration" : 7
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "78bec832f661ffaa",
-  "name" : "._getUsedPixels()",
-  "time" : {
-    "start" : 1532764374602,
-    "stop" : 1532764374605,
-    "duration" : 3
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "21e53a249ce91a63",
-  "name" : ".isMonochrome()",
-  "time" : {
-    "start" : 1532764374568,
-    "stop" : 1532764374572,
-    "duration" : 4
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "182b4a390a7a794",
-  "name" : "fxScreenOnFail",
-  "time" : {
-    "start" : 1532764374093,
-    "stop" : 1532764374529,
-    "duration" : 436
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f0b5ba7a872a9723",
-  "name" : "._loadImg()",
-  "time" : {
-    "start" : 1532764374586,
-    "stop" : 1532764374590,
-    "duration" : 4
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cd1feee6cda9033",
-  "name" : ".checkImagesEquivalence()",
-  "time" : {
-    "start" : 1532764374648,
-    "stop" : 1532764374651,
-    "duration" : 3
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d7096b4b0f67b34e",
-  "name" : ".isTransparent()",
-  "time" : {
-    "start" : 1532764374564,
-    "stop" : 1532764374568,
-    "duration" : 4
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d7c782f7ad4fa6d3",
+  "uid" : "339c115bd48240af",
   "name" : "Plugin lazy import",
   "time" : {
-    "start" : 1532764374631,
-    "stop" : 1532764374634,
+    "start" : 1532776185888,
+    "stop" : 1532776185892,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d14cace07d9b1381",
+  "name" : ".makeScreenshot()",
+  "time" : {
+    "start" : 1532776185898,
+    "stop" : 1532776185908,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7de214fe3bfc6f1",
+  "name" : ".isBlack()",
+  "time" : {
+    "start" : 1532776185825,
+    "stop" : 1532776185829,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "841a8a1bb0ecd720",
+  "name" : "._getDiffValue()",
+  "time" : {
+    "start" : 1532776185853,
+    "stop" : 1532776185856,
     "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b32f44a16b6e644",
+  "name" : "._loadImg()",
+  "time" : {
+    "start" : 1532776185839,
+    "stop" : 1532776185841,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63d0427842aa7f56",
+  "name" : "plugin help contains option",
+  "time" : {
+    "start" : 1532776185895,
+    "stop" : 1532776185896,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3120fa1b8928a163",
+  "name" : ".isWhite()",
+  "time" : {
+    "start" : 1532776185829,
+    "stop" : 1532776185834,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1bdef34de7f8ddea",
+  "name" : "Image resizing",
+  "time" : {
+    "start" : 1532776216337,
+    "stop" : 1532776217924,
+    "duration" : 1587
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "301cd57ddeaa9f39",
+  "name" : "._getUsedPixels()",
+  "time" : {
+    "start" : 1532776185851,
+    "stop" : 1532776185853,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4498ebc4f3b740f1",
+  "name" : ".checkImagesEquivalence()",
+  "time" : {
+    "start" : 1532776185908,
+    "stop" : 1532776185911,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a4e3e3cdea53b55",
+  "name" : "instance",
+  "time" : {
+    "start" : 1532776185813,
+    "stop" : 1532776185817,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef2d6ca0b5d1b96a",
+  "name" : ".isMonochrome()",
+  "time" : {
+    "start" : 1532776185821,
+    "stop" : 1532776185825,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c0f7e0baccbff85",
+  "name" : "._isPixelTolerant()",
+  "time" : {
+    "start" : 1532776185860,
+    "stop" : 1532776185864,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3c5ab9f226bb73c",
+  "name" : "._saveMatchImage()",
+  "time" : {
+    "start" : 1532776185841,
+    "stop" : 1532776185846,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4678a8acc1ab29a9",
+  "name" : "._displayScreenshot()",
+  "time" : {
+    "start" : 1532776185911,
+    "stop" : 1532776185913,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7da393db397d1951",
+  "name" : ".__getElementLocation()",
+  "time" : {
+    "start" : 1532776185927,
+    "stop" : 1532776185932,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adbd40ab3bbfacf9",
+  "name" : ".isTransparent()",
+  "time" : {
+    "start" : 1532776185817,
+    "stop" : 1532776185821,
+    "duration" : 4
   },
   "status" : "passed",
   "severity" : "normal"

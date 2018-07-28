@@ -1,0 +1,233 @@
+{
+  "uid" : "1bdef34de7f8ddea",
+  "name" : "Image resizing",
+  "fullName" : "e2e tests.Image resizing",
+  "historyId" : "428a3980e19a55bba85ca44d82e015b7",
+  "time" : {
+    "start" : 1532776216337,
+    "stop" : 1532776217924,
+    "duration" : 1587
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "with common percent",
+      "time" : {
+        "start" : 1532776216337,
+        "stop" : 1532776216879,
+        "duration" : 542
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Screenshot with system",
+        "time" : {
+          "start" : 1532776216338,
+          "stop" : 1532776216769,
+          "duration" : 431
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "37a379d9c1c2f33",
+          "name" : "screenshot",
+          "source" : "37a379d9c1c2f33.png",
+          "type" : "image/png",
+          "size" : 218063
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Resize image /home/user/vega/projects/glace/glace-image/report/image-resizing/screenshots/75de86cd-eebf-41c6-aa32-4d1d88e7e58d.png to [width=1025, height=576]",
+        "time" : {
+          "start" : 1532776216771,
+          "stop" : 1532776216879,
+          "duration" : 108
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ebeceae6a81429fd",
+          "name" : "resized",
+          "source" : "ebeceae6a81429fd.png",
+          "type" : "image/png",
+          "size" : 284961
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "with percent dimensions",
+      "time" : {
+        "start" : 1532776216879,
+        "stop" : 1532776217406,
+        "duration" : 527
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Screenshot with system",
+        "time" : {
+          "start" : 1532776216880,
+          "stop" : 1532776217197,
+          "duration" : 317
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "28e865bb0a79db56",
+          "name" : "screenshot",
+          "source" : "28e865bb0a79db56.png",
+          "type" : "image/png",
+          "size" : 218053
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Resize image /home/user/vega/projects/glace/glace-image/report/image-resizing/screenshots/03b975e9-f0f7-4862-bc68-ae49319d9a14.png to [width=2049, height=960]",
+        "time" : {
+          "start" : 1532776217199,
+          "stop" : 1532776217406,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "537034d75fbb2ca4",
+          "name" : "resized",
+          "source" : "537034d75fbb2ca4.png",
+          "type" : "image/png",
+          "size" : 526195
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "with pixel dimensions",
+      "time" : {
+        "start" : 1532776217407,
+        "stop" : 1532776217923,
+        "duration" : 516
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Screenshot with system",
+        "time" : {
+          "start" : 1532776217407,
+          "stop" : 1532776217825,
+          "duration" : 418
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cd972c1d5cdb7cbd",
+          "name" : "screenshot",
+          "source" : "cd972c1d5cdb7cbd.png",
+          "type" : "image/png",
+          "size" : 218300
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Resize image /home/user/vega/projects/glace/glace-image/report/image-resizing/screenshots/4178e2ef-2f3a-435a-aeeb-4a4c38a35175.png to [width=800, height=600]",
+        "time" : {
+          "start" : 1532776217825,
+          "stop" : 1532776217923,
+          "duration" : 98
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "352d5d7db1770835",
+          "name" : "resized",
+          "source" : "352d5d7db1770835.png",
+          "type" : "image/png",
+          "size" : 198723
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testClass",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Image resizing"
+  }, {
+    "name" : "package",
+    "value" : "e2e tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1bdef34de7f8ddea.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}
