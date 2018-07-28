@@ -1,0 +1,77 @@
+{
+  "uid" : "e3ca04635f76e06c",
+  "name" : "._getPixels()",
+  "fullName" : "Image.._getPixels()",
+  "historyId" : "b3887f4dff628c376fdb9f87e35e768e",
+  "time" : {
+    "start" : 1532802846026,
+    "stop" : 1532802846036,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "gets pixels",
+      "time" : {
+        "start" : 1532802846027,
+        "stop" : 1532802846035,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Image"
+  }, {
+    "name" : "testClass",
+    "value" : "Image"
+  }, {
+    "name" : "testMethod",
+    "value" : "._getPixels()"
+  }, {
+    "name" : "package",
+    "value" : "Image"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3ca04635f76e06c.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

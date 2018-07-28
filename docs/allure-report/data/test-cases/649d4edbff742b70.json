@@ -1,0 +1,77 @@
+{
+  "uid" : "649d4edbff742b70",
+  "name" : "._getDiffValue()",
+  "fullName" : "Image.._getDiffValue()",
+  "historyId" : "a0071e911a203906844065af5aede4b5",
+  "time" : {
+    "start" : 1532802846016,
+    "stop" : 1532802846018,
+    "duration" : 2
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "gets images diff value",
+      "time" : {
+        "start" : 1532802846017,
+        "stop" : 1532802846017,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Image"
+  }, {
+    "name" : "testClass",
+    "value" : "Image"
+  }, {
+    "name" : "testMethod",
+    "value" : "._getDiffValue()"
+  }, {
+    "name" : "package",
+    "value" : "Image"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "649d4edbff742b70.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

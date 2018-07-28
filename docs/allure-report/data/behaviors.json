@@ -2,313 +2,313 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "fxScreenOnFail",
-    "uid" : "ceab354b4d3a6829",
+    "uid" : "9d8a56db9008b5e7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185327,
-      "stop" : 1532776185782,
-      "duration" : 455
+      "start" : 1532802845194,
+      "stop" : 1532802845927,
+      "duration" : 733
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "afterCb",
-    "uid" : "fc61a63ea6428897",
+    "uid" : "c2c6941663496cec",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185783,
-      "stop" : 1532776185800,
+      "start" : 1532802845928,
+      "stop" : 1532802845945,
       "duration" : 17
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "instance",
-    "uid" : "9a4e3e3cdea53b55",
+    "uid" : "1a3c4b355ccc7aa2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185813,
-      "stop" : 1532776185817,
-      "duration" : 4
+      "start" : 1532802845961,
+      "stop" : 1532802845968,
+      "duration" : 7
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".isTransparent()",
-    "uid" : "adbd40ab3bbfacf9",
+    "uid" : "f863d7ecb4e7d2e1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185817,
-      "stop" : 1532776185821,
-      "duration" : 4
+      "start" : 1532802845968,
+      "stop" : 1532802845974,
+      "duration" : 6
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".isMonochrome()",
-    "uid" : "ef2d6ca0b5d1b96a",
+    "uid" : "5cc4572f51c6ccde",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185821,
-      "stop" : 1532776185825,
-      "duration" : 4
+      "start" : 1532802845974,
+      "stop" : 1532802845980,
+      "duration" : 6
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".isBlack()",
-    "uid" : "f7de214fe3bfc6f1",
+    "uid" : "3eeb6ab5e3b79739",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185825,
-      "stop" : 1532776185829,
-      "duration" : 4
+      "start" : 1532802845980,
+      "stop" : 1532802845986,
+      "duration" : 6
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".isWhite()",
-    "uid" : "3120fa1b8928a163",
+    "uid" : "cfc6c2c1448adfdb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185829,
-      "stop" : 1532776185834,
-      "duration" : 5
+      "start" : 1532802845986,
+      "stop" : 1532802845992,
+      "duration" : 6
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".includes()",
-    "uid" : "d8121bee47473f1a",
+    "uid" : "f31da4fbb7aaf036",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185834,
-      "stop" : 1532776185839,
-      "duration" : 5
+      "start" : 1532802845992,
+      "stop" : 1532802845999,
+      "duration" : 7
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._loadImg()",
-    "uid" : "6b32f44a16b6e644",
+    "uid" : "7d4aafaa9a1eec6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185839,
-      "stop" : 1532776185841,
-      "duration" : 2
+      "start" : 1532802845999,
+      "stop" : 1532802846003,
+      "duration" : 4
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._saveMatchImage()",
-    "uid" : "a3c5ab9f226bb73c",
+    "uid" : "8f71fdb9276298ba",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185841,
-      "stop" : 1532776185846,
+      "start" : 1532802846003,
+      "stop" : 1532802846008,
       "duration" : 5
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._includes()",
-    "uid" : "bf5fe890467b1442",
+    "uid" : "7267417b7eadf42a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185846,
-      "stop" : 1532776185851,
+      "start" : 1532802846008,
+      "stop" : 1532802846013,
       "duration" : 5
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._getUsedPixels()",
-    "uid" : "301cd57ddeaa9f39",
+    "uid" : "fad0a582ba126a0d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185851,
-      "stop" : 1532776185853,
-      "duration" : 2
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "._getDiffValue()",
-    "uid" : "841a8a1bb0ecd720",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1532776185853,
-      "stop" : 1532776185856,
+      "start" : 1532802846013,
+      "stop" : 1532802846016,
       "duration" : 3
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
-    "name" : "._isPixelUsed()",
-    "uid" : "2773d91ae24a57e3",
+    "name" : "._getDiffValue()",
+    "uid" : "649d4edbff742b70",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185856,
-      "stop" : 1532776185860,
+      "start" : 1532802846016,
+      "stop" : 1532802846018,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "._isPixelUsed()",
+    "uid" : "bfd83b409ddf975d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1532802846018,
+      "stop" : 1532802846022,
       "duration" : 4
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._isPixelTolerant()",
-    "uid" : "9c0f7e0baccbff85",
+    "uid" : "e5f00dcfdf0162e7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185860,
-      "stop" : 1532776185864,
+      "start" : 1532802846022,
+      "stop" : 1532802846026,
       "duration" : 4
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._getPixels()",
-    "uid" : "e74ccd92151000d9",
+    "uid" : "e3ca04635f76e06c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185865,
-      "stop" : 1532776185872,
-      "duration" : 7
+      "start" : 1532802846026,
+      "stop" : 1532802846036,
+      "duration" : 10
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "._cropPixels()",
-    "uid" : "18f13531a8ca10e2",
+    "uid" : "9a4be63d2d6d3fe8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185872,
-      "stop" : 1532776185875,
-      "duration" : 3
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Plugin lazy import",
-    "uid" : "339c115bd48240af",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1532776185888,
-      "stop" : 1532776185892,
+      "start" : 1532802846036,
+      "stop" : 1532802846040,
       "duration" : 4
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
-    "name" : "plugin help contains option",
-    "uid" : "63d0427842aa7f56",
+    "name" : "Plugin lazy import",
+    "uid" : "48f133ec5a198e35",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185895,
-      "stop" : 1532776185896,
+      "start" : 1532802846056,
+      "stop" : 1532802846059,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "plugin help contains option",
+    "uid" : "c6305d482c75ae56",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1532802846060,
+      "stop" : 1532802846061,
       "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".makeScreenshot()",
-    "uid" : "d14cace07d9b1381",
+    "uid" : "50e2a1018a730b22",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185898,
-      "stop" : 1532776185908,
-      "duration" : 10
+      "start" : 1532802846063,
+      "stop" : 1532802846072,
+      "duration" : 9
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".checkImagesEquivalence()",
-    "uid" : "4498ebc4f3b740f1",
+    "uid" : "4ece19c562fa5418",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185908,
-      "stop" : 1532776185911,
-      "duration" : 3
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "._displayScreenshot()",
-    "uid" : "4678a8acc1ab29a9",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1532776185911,
-      "stop" : 1532776185913,
+      "start" : 1532802846072,
+      "stop" : 1532802846074,
       "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
-    "name" : "._cutElement()",
-    "uid" : "880cb0dc0d611fd",
+    "name" : "._displayScreenshot()",
+    "uid" : "cc101fd6cea44c84",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185913,
-      "stop" : 1532776185926,
-      "duration" : 13
+      "start" : 1532802846074,
+      "stop" : 1532802846077,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "._cutElement()",
+    "uid" : "618636fc9616d5eb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1532802846078,
+      "stop" : 1532802846104,
+      "duration" : 26
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : ".__getElementLocation()",
-    "uid" : "7da393db397d1951",
+    "uid" : "a9ecf059fe07c218",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185927,
-      "stop" : 1532776185932,
+      "start" : 1532802846104,
+      "stop" : 1532802846109,
       "duration" : 5
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Images processing",
-    "uid" : "310a2af9ee94e895",
+    "uid" : "2890b71b8610237",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776185939,
-      "stop" : 1532776216336,
-      "duration" : 30397
+      "start" : 1532802846118,
+      "stop" : 1532802873545,
+      "duration" : 27427
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Image resizing",
-    "uid" : "1bdef34de7f8ddea",
+    "uid" : "b990d93b1e8d942",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1532776216337,
-      "stop" : 1532776217924,
-      "duration" : 1587
+      "start" : 1532802873546,
+      "stop" : 1532802875030,
+      "duration" : 1484
     },
     "flaky" : false,
     "parameters" : [ ]
