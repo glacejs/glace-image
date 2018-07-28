@@ -2,11 +2,14 @@
 
 var pluginHelp = require("../../lib").pluginHelp;
 
-test("plugin help contains option", () => {
+suite("help", () => {
 
-    var opts = pluginHelp({ options: opts => opts }, d => d);
+    test("plugin help contains option", () => {
 
-    chunk("screenshot-on-fail", () => {
-        expect(opts["screenshot-on-fail"]).to.exist;
+        var opts = pluginHelp({ options: opts => opts }, d => d);
+
+        chunk("screenshot-on-fail", () => {
+            expect(opts["screenshot-on-fail"]).to.exist;
+        });
     });
 });

@@ -6,13 +6,14 @@
   "scripts": {
     "ci": "npm run lint && npm run test:unit",
     "release": "VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git add -u && git commit -m \"release $VERSION\" && git tag $VERSION && git push origin $VERSION && npm run docs:publish && npm publish",
-    "docs": "rm -rf docs && jsdoc -c jsdoc.json -d docs",
+    "docs": "rm -rf docs && jsdoc -c jsdoc.json -d docs && npm run allure:report",
     "docs:publish": "npm run docs && git add docs && git commit -m \"update docs\" && git push origin master",
+    "allure:report": "npm run test:cover && allure generate report/allure --report-dir ./docs/allure-report",
     "lint": "eslint lib tests",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run lint && npm run test:unit && npm run test:e2e",
     "test:unit": "nyc ./tests/run tests/unit",
-    "test:cover": "nyc --reporter=lcov ./tests/run tests/unit",
+    "test:cover": "nyc --reporter=lcov --report-dir ./docs/tests-cover ./tests/run tests/unit tests/e2e --allure",
     "test:commit": "./tests/run tests/unit",
     "test:e2e": "./tests/run tests/e2e"
   },
@@ -40,7 +41,7 @@
   "dependencies": {
     "desktop-screenshot": "git+https://github.com/schipiga/node-desktop-screenshot.git",
     "fs-extra": "^5.0.0",
-    "glace-utils": "^1.2.8",
+    "glace-utils": "^1.2.9",
     "lodash": "^4.17.10",
     "pixelmatch": "^4.0.2",
     "pngjs": "^3.3.3",
@@ -50,8 +51,8 @@
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "glace-core": "^1.6.4",
-    "glace-web": "^1.2.4",
+    "glace-core": "^1.7.7",
+    "glace-web": "^1.2.8",
     "ink-docstrap": "^1.3.0",
     "jsdoc": "^3.5.5",
     "jsdoc-strip-async-await": "^0.1.0",

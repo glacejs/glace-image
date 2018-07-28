@@ -2,7 +2,7 @@
 
 var Image = require("../../lib/image");
 
-scope("Image", () => {
+suite("Image", () => {
     var image, sharpObj;
 
     beforeChunk(() => {

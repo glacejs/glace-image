@@ -9,75 +9,79 @@ var indexPage = new Page(
 
 CONF.web.url = "https://yandex.ru";
 
-test("Images processing", null, [fxKillWebdriver, fxSelenium, fxWebdriver, fxBrowser], () => {
+suite("e2e tests", () => {
 
-    before(() => {
-        SS.registerPages(indexPage);
+    test("Images processing", null, [fxKillWebdriver, fxSelenium, fxWebdriver, fxBrowser], () => {
+
+        before(() => {
+            $.registerPages(indexPage);
+        });
+    
+        chunk("Image should include image", async () => {
+            await $.openPage(indexPage.name);
+            var searchImage = await $.makeScreenshot({ element: "searchButton" });
+            var fullImage = await $.makeScreenshot();
+            await $.checkImageInclusion(fullImage, searchImage);
+        });
+    
+        chunk("Image shouldn't include image", async () => {
+            await $.openPage(indexPage.name);
+            var searchImage = await $.makeScreenshot({ element: "searchButton" });
+            await $.openUrl("https://opennet.ru");
+            var fullImage = await $.makeScreenshot();
+            await $.checkImageInclusion(
+                fullImage, searchImage, { shouldBe: false });
+        });
+    
+        chunk("Images should be equal", async () => {
+            await $.openApp();
+            var image1 = await $.makeScreenshot();
+            var image2 = await $.makeScreenshot();
+            await $.checkImagesEquivalence(image1, image2);
+        });
+    
+        chunk("Image shouldn't be equal", async () => {
+            await $.openApp();
+            var image1 = await $.makeScreenshot();
+            await $.openUrl("https://opennet.ru");
+            var image2 = await $.makeScreenshot();
+            await $.checkImagesEquivalence(image1, image2, { shouldBe: false });
+        });
+    
+        chunk("Image should be captured by selenium", async () => {
+            await $.openApp();
+            await $.makeScreenshot();
+        });
+    
+        chunk("Image should be captured by html2canvas", async () => {
+            await $.openUrl("http://html2canvas.hertzen.com/");
+            await $.makeScreenshot({ by: "html2canvas" });
+        });
+    
+        chunk("Image should be captured by system", async () => {
+            await $.openUrl("https://github.com");
+            await $.makeScreenshot({ by: "system" });
+        });
+    });
+    
+    test("Image resizing", () => {
+        var imgPath;
+    
+        beforeChunk(async () => {
+            imgPath = await $.makeScreenshot();
+        });
+    
+        chunk("with common percent", async () => {
+            await $.resizeImage(imgPath, "75%");
+        });
+    
+        chunk("with percent dimensions", async () => {
+            await $.resizeImage(imgPath, { width: "150%", height: "125%" });
+        });
+    
+        chunk("with pixel dimensions", async () => {
+            await $.resizeImage(imgPath, { width: 800, height: 600 });
+        });
     });
 
-    chunk("Image should include image", async () => {
-        await SS.openPage(indexPage.name);
-        var searchImage = await SS.makeScreenshot({ element: "searchButton" });
-        var fullImage = await SS.makeScreenshot();
-        await SS.checkImageInclusion(fullImage, searchImage);
-    });
-
-    chunk("Image shouldn't include image", async () => {
-        await SS.openPage(indexPage.name);
-        var searchImage = await SS.makeScreenshot({ element: "searchButton" });
-        await SS.openUrl("https://opennet.ru");
-        var fullImage = await SS.makeScreenshot();
-        await SS.checkImageInclusion(
-            fullImage, searchImage, { shouldBe: false });
-    });
-
-    chunk("Images should be equal", async () => {
-        await SS.openApp();
-        var image1 = await SS.makeScreenshot();
-        var image2 = await SS.makeScreenshot();
-        await SS.checkImagesEquivalence(image1, image2);
-    });
-
-    chunk("Image shouldn't be equal", async () => {
-        await SS.openApp();
-        var image1 = await SS.makeScreenshot();
-        await SS.openUrl("https://opennet.ru");
-        var image2 = await SS.makeScreenshot();
-        await SS.checkImagesEquivalence(image1, image2, { shouldBe: false });
-    });
-
-    chunk("Image should be captured by selenium", async () => {
-        await SS.openApp();
-        await SS.makeScreenshot();
-    });
-
-    chunk("Image should be captured by html2canvas", async () => {
-        await SS.openUrl("http://html2canvas.hertzen.com/");
-        await SS.makeScreenshot({ by: "html2canvas" });
-    });
-
-    chunk("Image should be captured by system", async () => {
-        await SS.openUrl("https://github.com");
-        await SS.makeScreenshot({ by: "system" });
-    });
-});
-
-test("Image resizing", () => {
-    var imgPath;
-
-    beforeChunk(async () => {
-        imgPath = await SS.makeScreenshot();
-    });
-
-    chunk("with common percent", async () => {
-        await SS.resizeImage(imgPath, "75%");
-    });
-
-    chunk("with percent dimensions", async () => {
-        await SS.resizeImage(imgPath, { width: "150%", height: "125%" });
-    });
-
-    chunk("with pixel dimensions", async () => {
-        await SS.resizeImage(imgPath, { width: 800, height: 600 });
-    });
 });

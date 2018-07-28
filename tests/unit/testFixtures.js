@@ -5,7 +5,7 @@ var LOG = require("glace-utils").logger;
 require("../../lib/fixtures");
 var fixture = rewire("../../lib/fixtures/fxScreenOnFail");
 
-scope("fixtures", () => {
+suite("fixtures", () => {
 
     test("fxScreenOnFail", () => {
 

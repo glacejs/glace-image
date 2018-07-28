@@ -2,13 +2,23 @@
 
 var U = require("glace-utils");
 
-var Steps = require("../../lib").Steps;
+var Steps = rewire("../../lib/steps");
 
-scope("Steps", () => {
-    var ctx;
+suite("Steps", () => {
+    var ctx, allure;
 
     beforeChunk(() => {
         ctx = {};
+        allure = {
+            step: sinon.spy(),
+            pass: sinon.spy(),
+            attachImage: sinon.spy(),
+        };
+        Steps.__set__("allure", allure);
+    });
+
+    afterChunk(() => {
+        Steps.__reset__();
     });
 
     test(".makeScreenshot()", () => {
