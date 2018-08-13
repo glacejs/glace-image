@@ -4,24 +4,24 @@
     "name" : "fixtures",
     "children" : [ {
       "name" : "fxScreenOnFail",
-      "uid" : "9d8a56db9008b5e7",
+      "uid" : "6c6614c82396a25",
       "parentUid" : "2592b852c3c02d173d05a8a667d4e7ec",
       "status" : "passed",
       "time" : {
-        "start" : 1532802845194,
-        "stop" : 1532802845927,
-        "duration" : 733
+        "start" : 1534186479772,
+        "stop" : 1534186480187,
+        "duration" : 415
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "afterCb",
-      "uid" : "c2c6941663496cec",
+      "uid" : "a9afa651643241d3",
       "parentUid" : "2592b852c3c02d173d05a8a667d4e7ec",
       "status" : "passed",
       "time" : {
-        "start" : 1532802845928,
-        "stop" : 1532802845945,
+        "start" : 1534186480188,
+        "stop" : 1534186480205,
         "duration" : 17
       },
       "flaky" : false,
@@ -32,181 +32,181 @@
     "name" : "Image",
     "children" : [ {
       "name" : "instance",
-      "uid" : "1a3c4b355ccc7aa2",
+      "uid" : "133a4355b0215285",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802845961,
-        "stop" : 1532802845968,
+        "start" : 1534186480219,
+        "stop" : 1534186480226,
         "duration" : 7
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : ".isTransparent()",
-      "uid" : "f863d7ecb4e7d2e1",
+      "uid" : "6496d219b67fad36",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802845968,
-        "stop" : 1532802845974,
+        "start" : 1534186480226,
+        "stop" : 1534186480232,
         "duration" : 6
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : ".isMonochrome()",
-      "uid" : "5cc4572f51c6ccde",
+      "uid" : "d758a2519bed0d6b",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802845974,
-        "stop" : 1532802845980,
-        "duration" : 6
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : ".isBlack()",
-      "uid" : "3eeb6ab5e3b79739",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802845980,
-        "stop" : 1532802845986,
-        "duration" : 6
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : ".isWhite()",
-      "uid" : "cfc6c2c1448adfdb",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802845986,
-        "stop" : 1532802845992,
-        "duration" : 6
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : ".includes()",
-      "uid" : "f31da4fbb7aaf036",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802845992,
-        "stop" : 1532802845999,
-        "duration" : 7
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "._loadImg()",
-      "uid" : "7d4aafaa9a1eec6",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802845999,
-        "stop" : 1532802846003,
-        "duration" : 4
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "._saveMatchImage()",
-      "uid" : "8f71fdb9276298ba",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802846003,
-        "stop" : 1532802846008,
+        "start" : 1534186480232,
+        "stop" : 1534186480237,
         "duration" : 5
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
-      "name" : "._includes()",
-      "uid" : "7267417b7eadf42a",
+      "name" : ".isBlack()",
+      "uid" : "1ac6039df9d13729",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846008,
-        "stop" : 1532802846013,
+        "start" : 1534186480238,
+        "stop" : 1534186480243,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".isWhite()",
+      "uid" : "6bc69260a65cfa85",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480244,
+        "stop" : 1534186480249,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".includes()",
+      "uid" : "44db8922db93627e",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480250,
+        "stop" : 1534186480256,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._loadImg()",
+      "uid" : "301ac9636cd4b1bd",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480256,
+        "stop" : 1534186480259,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._saveMatchImage()",
+      "uid" : "bfdf06bc3ef4606a",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480259,
+        "stop" : 1534186480263,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._includes()",
+      "uid" : "2fe30eea6eb5ee5d",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480264,
+        "stop" : 1534186480269,
         "duration" : 5
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "._getUsedPixels()",
-      "uid" : "fad0a582ba126a0d",
+      "uid" : "a043100399a33095",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846013,
-        "stop" : 1532802846016,
-        "duration" : 3
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "._getDiffValue()",
-      "uid" : "649d4edbff742b70",
-      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802846016,
-        "stop" : 1532802846018,
+        "start" : 1534186480269,
+        "stop" : 1534186480271,
         "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
-      "name" : "._isPixelUsed()",
-      "uid" : "bfd83b409ddf975d",
+      "name" : "._getDiffValue()",
+      "uid" : "27501135ef3f8516",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846018,
-        "stop" : 1532802846022,
-        "duration" : 4
+        "start" : 1534186480272,
+        "stop" : 1534186480273,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._isPixelUsed()",
+      "uid" : "cd0efb8070720c72",
+      "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480273,
+        "stop" : 1534186480275,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "._isPixelTolerant()",
-      "uid" : "e5f00dcfdf0162e7",
+      "uid" : "875144db2debd0b2",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846022,
-        "stop" : 1532802846026,
-        "duration" : 4
+        "start" : 1534186480276,
+        "stop" : 1534186480278,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "._getPixels()",
-      "uid" : "e3ca04635f76e06c",
+      "uid" : "ba68f0ea6fa0d72d",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846026,
-        "stop" : 1532802846036,
-        "duration" : 10
+        "start" : 1534186480278,
+        "stop" : 1534186480308,
+        "duration" : 30
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "._cropPixels()",
-      "uid" : "9a4be63d2d6d3fe8",
+      "uid" : "f9cab3dcd0537f6f",
       "parentUid" : "577cdb121205f6f2cda807e7cb4ab03e",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846036,
-        "stop" : 1532802846040,
-        "duration" : 4
+        "start" : 1534186480308,
+        "stop" : 1534186480310,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -216,13 +216,13 @@
     "name" : "import",
     "children" : [ {
       "name" : "Plugin lazy import",
-      "uid" : "48f133ec5a198e35",
+      "uid" : "e54a620d9b423404",
       "parentUid" : "d59a8c7be7fa9550263e816ce50c1304",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846056,
-        "stop" : 1532802846059,
-        "duration" : 3
+        "start" : 1534186480320,
+        "stop" : 1534186480322,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -232,12 +232,12 @@
     "name" : "help",
     "children" : [ {
       "name" : "plugin help contains option",
-      "uid" : "c6305d482c75ae56",
+      "uid" : "e94f6927edcfdde5",
       "parentUid" : "5173d48d49ba424021d5d67634957168",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846060,
-        "stop" : 1532802846061,
+        "start" : 1534186480324,
+        "stop" : 1534186480325,
         "duration" : 1
       },
       "flaky" : false,
@@ -248,61 +248,61 @@
     "name" : "Steps",
     "children" : [ {
       "name" : ".makeScreenshot()",
-      "uid" : "50e2a1018a730b22",
+      "uid" : "2ebb0816d0ebc898",
       "parentUid" : "461699b47d3f48167e172dc7180133a9",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846063,
-        "stop" : 1532802846072,
-        "duration" : 9
+        "start" : 1534186480326,
+        "stop" : 1534186480336,
+        "duration" : 10
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : ".checkImagesEquivalence()",
-      "uid" : "4ece19c562fa5418",
+      "uid" : "ebdea26a81171664",
       "parentUid" : "461699b47d3f48167e172dc7180133a9",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846072,
-        "stop" : 1532802846074,
-        "duration" : 2
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "._displayScreenshot()",
-      "uid" : "cc101fd6cea44c84",
-      "parentUid" : "461699b47d3f48167e172dc7180133a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1532802846074,
-        "stop" : 1532802846077,
+        "start" : 1534186480336,
+        "stop" : 1534186480339,
         "duration" : 3
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
-      "name" : "._cutElement()",
-      "uid" : "618636fc9616d5eb",
+      "name" : "._displayScreenshot()",
+      "uid" : "5ab2bd54e99944ab",
       "parentUid" : "461699b47d3f48167e172dc7180133a9",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846078,
-        "stop" : 1532802846104,
-        "duration" : 26
+        "start" : 1534186480339,
+        "stop" : 1534186480341,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._cutElement()",
+      "uid" : "50744717e60156be",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1534186480342,
+        "stop" : 1534186480354,
+        "duration" : 12
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : ".__getElementLocation()",
-      "uid" : "a9ecf059fe07c218",
+      "uid" : "69869312501fc046",
       "parentUid" : "461699b47d3f48167e172dc7180133a9",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846104,
-        "stop" : 1532802846109,
-        "duration" : 5
+        "start" : 1534186480355,
+        "stop" : 1534186480358,
+        "duration" : 3
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -312,25 +312,25 @@
     "name" : "e2e tests",
     "children" : [ {
       "name" : "Images processing",
-      "uid" : "2890b71b8610237",
+      "uid" : "96f3278ac6228daa",
       "parentUid" : "5026b933dff805eb251ddf2d7a258ff7",
       "status" : "passed",
       "time" : {
-        "start" : 1532802846118,
-        "stop" : 1532802873545,
-        "duration" : 27427
+        "start" : 1534186480362,
+        "stop" : 1534186508790,
+        "duration" : 28428
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "Image resizing",
-      "uid" : "b990d93b1e8d942",
+      "uid" : "e253095bd1789c85",
       "parentUid" : "5026b933dff805eb251ddf2d7a258ff7",
       "status" : "passed",
       "time" : {
-        "start" : 1532802873546,
-        "stop" : 1532802875030,
-        "duration" : 1484
+        "start" : 1534186508791,
+        "stop" : 1534186510047,
+        "duration" : 1256
       },
       "flaky" : false,
       "parameters" : [ ]
