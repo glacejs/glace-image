@@ -1,3 +1,7 @@
+### v1.2.6
+
+- [Started](https://github.com/glacejs/glace-image/commit/07bc08f5b42ea68eda87b141c734f7d8b2d1499a) to support slaves mechanism.
+
 ### v1.2.5
 
 - Migrated to new `glace-core`.
