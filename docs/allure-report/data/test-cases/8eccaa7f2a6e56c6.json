@@ -1,0 +1,113 @@
+{
+  "uid" : "8eccaa7f2a6e56c6",
+  "name" : "fxScreenOnFail",
+  "fullName" : "fixtures.fxScreenOnFail",
+  "historyId" : "f1589408a9ed1272e85fac5afb1e53d",
+  "time" : {
+    "start" : 1534442441159,
+    "stop" : 1534442441595,
+    "duration" : 436
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "exists global",
+      "time" : {
+        "start" : 1534442441165,
+        "stop" : 1534442441167,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "is called correct",
+      "time" : {
+        "start" : 1534442441167,
+        "stop" : 1534442441169,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Screenshot with system",
+      "time" : {
+        "start" : 1534442441171,
+        "stop" : 1534442441523,
+        "duration" : 352
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "31be8e11591a0d61",
+        "name" : "screenshot",
+        "source" : "31be8e11591a0d61.png",
+        "type" : "image/png",
+        "size" : 246150
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fixtures"
+  }, {
+    "name" : "testClass",
+    "value" : "fixtures"
+  }, {
+    "name" : "testMethod",
+    "value" : "fxScreenOnFail"
+  }, {
+    "name" : "package",
+    "value" : "fixtures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8eccaa7f2a6e56c6.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

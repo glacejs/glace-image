@@ -1,0 +1,92 @@
+{
+  "uid" : "e271bab56a074e07",
+  "name" : "._isPixelTolerant()",
+  "fullName" : "Image.._isPixelTolerant()",
+  "historyId" : "3f404fda0ac5863f1c800a2493630f23",
+  "time" : {
+    "start" : 1534442441688,
+    "stop" : 1534442441692,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "returns true",
+      "time" : {
+        "start" : 1534442441689,
+        "stop" : 1534442441690,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "returns false",
+      "time" : {
+        "start" : 1534442441690,
+        "stop" : 1534442441691,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Image"
+  }, {
+    "name" : "testClass",
+    "value" : "Image"
+  }, {
+    "name" : "testMethod",
+    "value" : "._isPixelTolerant()"
+  }, {
+    "name" : "package",
+    "value" : "Image"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e271bab56a074e07.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}
