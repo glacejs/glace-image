@@ -1,3 +1,8 @@
+### v1.2.7
+
+- Updated `glace-core`.
+- Started to use `$` only.
+
 ### v1.2.6
 
 - [Started](https://github.com/glacejs/glace-image/commit/07bc08f5b42ea68eda87b141c734f7d8b2d1499a) to support slaves mechanism.
