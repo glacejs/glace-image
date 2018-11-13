@@ -11,7 +11,7 @@ CONF.web.url = "https://yandex.ru";
 
 suite("e2e tests", () => {
 
-    test("Images processing", null, [fxKillWebdriver, fxSelenium, fxWebdriver, fxBrowser], () => {
+    test("Images processing", null, [fxKillWebdriver, fxSelenium, fxBrowser], () => {
 
         before(() => {
             $.registerPages(indexPage);
