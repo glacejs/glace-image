@@ -1,3 +1,7 @@
+### v1.2.9
+
+- [Used](https://github.com/glacejs/glace-image/commit/b87aaa0c6530361a9fc287c92a2f6856bd3898e7) fixtures factory.
+
 ### v1.2.8
 
 - Updated dependencies.
