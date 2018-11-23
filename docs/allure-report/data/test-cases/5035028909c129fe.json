@@ -1,0 +1,833 @@
+{
+  "uid" : "5035028909c129fe",
+  "name" : "Images processing",
+  "fullName" : "e2e tests.Images processing",
+  "historyId" : "7a6ed681cfcdcc1ae272aece99ce3458",
+  "time" : {
+    "start" : 1542994151442,
+    "stop" : 1542994182019,
+    "duration" : 30577
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Install selenium drivers",
+      "time" : {
+        "start" : 1542994151498,
+        "stop" : 1542994155619,
+        "duration" : 4121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Start selenium server on port 42720",
+      "time" : {
+        "start" : 1542994155623,
+        "stop" : 1542994157061,
+        "duration" : 1438
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Launch browser \"chrome-0f1d7200-1968-4e8d-9045-b85ce7437df6\" via selenium",
+      "time" : {
+        "start" : 1542994157066,
+        "stop" : 1542994159720,
+        "duration" : 2654
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Register web page index",
+      "time" : {
+        "start" : 1542994159720,
+        "stop" : 1542994159721,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Image should include image",
+      "time" : {
+        "start" : 1542994159721,
+        "stop" : 1542994165037,
+        "duration" : 5316
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open web page index",
+        "time" : {
+          "start" : 1542994159721,
+          "stop" : 1542994161634,
+          "duration" : 1913
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Open URL \"https://yandex.ru/\" in browser",
+          "time" : {
+            "start" : 1542994159722,
+            "stop" : 1542994161634,
+            "duration" : 1912
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994161638,
+          "stop" : 1542994162051,
+          "duration" : 413
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get web element with name searchButton",
+          "time" : {
+            "start" : 1542994161846,
+            "stop" : 1542994161854,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Get current web page",
+            "time" : {
+              "start" : 1542994161847,
+              "stop" : 1542994161854,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "65d889df9cc68aa8",
+          "name" : "screenshot",
+          "source" : "65d889df9cc68aa8.png",
+          "type" : "image/png",
+          "size" : 840
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994162055,
+          "stop" : 1542994162297,
+          "duration" : 242
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d06e53f4704d42f0",
+          "name" : "screenshot",
+          "source" : "d06e53f4704d42f0.png",
+          "type" : "image/png",
+          "size" : 163720
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check that image /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/b7f49237-3e1e-4242-b2c0-23a5833674f9.png includes /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/fba99511-c114-446d-8d79-ccc5e6ef3b38.png",
+        "time" : {
+          "start" : 1542994162297,
+          "stop" : 1542994165037,
+          "duration" : 2740
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Image shouldn't include image",
+      "time" : {
+        "start" : 1542994165038,
+        "stop" : 1542994171373,
+        "duration" : 6335
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open web page index",
+        "time" : {
+          "start" : 1542994165038,
+          "stop" : 1542994165624,
+          "duration" : 586
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Open URL \"https://yandex.ru/\" in browser",
+          "time" : {
+            "start" : 1542994165038,
+            "stop" : 1542994165624,
+            "duration" : 586
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994165628,
+          "stop" : 1542994165939,
+          "duration" : 311
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Get web element with name searchButton",
+          "time" : {
+            "start" : 1542994165755,
+            "stop" : 1542994165764,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Get current web page",
+            "time" : {
+              "start" : 1542994165755,
+              "stop" : 1542994165764,
+              "duration" : 9
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "689feda4169fa5fb",
+          "name" : "screenshot",
+          "source" : "689feda4169fa5fb.png",
+          "type" : "image/png",
+          "size" : 840
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Open URL \"https://opennet.ru\" in browser",
+        "time" : {
+          "start" : 1542994165939,
+          "stop" : 1542994166678,
+          "duration" : 739
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994166682,
+          "stop" : 1542994166893,
+          "duration" : 211
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5d749ae6aad29778",
+          "name" : "screenshot",
+          "source" : "5d749ae6aad29778.png",
+          "type" : "image/png",
+          "size" : 199245
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check that image /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/9f823283-a6a2-44d2-94d7-0691fa5ef280.png doesn't include /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/6e24beb6-60c1-45fb-a050-4067472f28d5.png",
+        "time" : {
+          "start" : 1542994166893,
+          "stop" : 1542994171373,
+          "duration" : 4480
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Images should be equal",
+      "time" : {
+        "start" : 1542994171373,
+        "stop" : 1542994172806,
+        "duration" : 1433
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open web application",
+        "time" : {
+          "start" : 1542994171373,
+          "stop" : 1542994171986,
+          "duration" : 613
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Open URL \"https://yandex.ru\" in browser",
+          "time" : {
+            "start" : 1542994171374,
+            "stop" : 1542994171986,
+            "duration" : 612
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994171990,
+          "stop" : 1542994172219,
+          "duration" : 229
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "107ad1f5cb346363",
+          "name" : "screenshot",
+          "source" : "107ad1f5cb346363.png",
+          "type" : "image/png",
+          "size" : 149855
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994172223,
+          "stop" : 1542994172439,
+          "duration" : 216
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bc16e6eb4323dad4",
+          "name" : "screenshot",
+          "source" : "bc16e6eb4323dad4.png",
+          "type" : "image/png",
+          "size" : 166355
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check that image /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/aeef6217-591d-460f-91aa-f4d66f922a9f.png is equal to /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/972e4fac-4053-454d-a348-044ec092b8f9.png",
+        "time" : {
+          "start" : 1542994172439,
+          "stop" : 1542994172806,
+          "duration" : 367
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Image shouldn't be equal",
+      "time" : {
+        "start" : 1542994172807,
+        "stop" : 1542994174393,
+        "duration" : 1586
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open web application",
+        "time" : {
+          "start" : 1542994172807,
+          "stop" : 1542994173222,
+          "duration" : 415
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Open URL \"https://yandex.ru\" in browser",
+          "time" : {
+            "start" : 1542994172807,
+            "stop" : 1542994173222,
+            "duration" : 415
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994173227,
+          "stop" : 1542994173416,
+          "duration" : 189
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "94845a25eaa02a41",
+          "name" : "screenshot",
+          "source" : "94845a25eaa02a41.png",
+          "type" : "image/png",
+          "size" : 139347
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Open URL \"https://opennet.ru\" in browser",
+        "time" : {
+          "start" : 1542994173416,
+          "stop" : 1542994173681,
+          "duration" : 265
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994173686,
+          "stop" : 1542994173918,
+          "duration" : 232
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "61e01ac50c201453",
+          "name" : "screenshot",
+          "source" : "61e01ac50c201453.png",
+          "type" : "image/png",
+          "size" : 199245
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Check that image /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/6ed4fcd8-7fe5-41ff-909a-2f7959a0d986.png isn't equal to /home/user/vega/projects/glace/glace-image/report/tests/images-processing/screenshots/700e3e73-cf1a-4750-8b70-df5056a33b27.png",
+        "time" : {
+          "start" : 1542994173918,
+          "stop" : 1542994174393,
+          "duration" : 475
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Image should be captured by selenium",
+      "time" : {
+        "start" : 1542994174394,
+        "stop" : 1542994175301,
+        "duration" : 907
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open web application",
+        "time" : {
+          "start" : 1542994174394,
+          "stop" : 1542994175081,
+          "duration" : 687
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Open URL \"https://yandex.ru\" in browser",
+          "time" : {
+            "start" : 1542994174394,
+            "stop" : 1542994175081,
+            "duration" : 687
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Screenshot with selenium",
+        "time" : {
+          "start" : 1542994175086,
+          "stop" : 1542994175301,
+          "duration" : 215
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2154e8ec84096959",
+          "name" : "screenshot",
+          "source" : "2154e8ec84096959.png",
+          "type" : "image/png",
+          "size" : 137795
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Image should be captured by html2canvas",
+      "time" : {
+        "start" : 1542994175301,
+        "stop" : 1542994177271,
+        "duration" : 1970
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open URL \"http://html2canvas.hertzen.com/\" in browser",
+        "time" : {
+          "start" : 1542994175302,
+          "stop" : 1542994176621,
+          "duration" : 1319
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Screenshot with html2canvas",
+        "time" : {
+          "start" : 1542994176621,
+          "stop" : 1542994177271,
+          "duration" : 650
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6e0322622fbc02c0",
+          "name" : "screenshot",
+          "source" : "6e0322622fbc02c0.png",
+          "type" : "image/png",
+          "size" : 99747
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Image should be captured by system",
+      "time" : {
+        "start" : 1542994177344,
+        "stop" : 1542994180574,
+        "duration" : 3230
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Open URL \"https://github.com\" in browser",
+        "time" : {
+          "start" : 1542994177344,
+          "stop" : 1542994180295,
+          "duration" : 2951
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Screenshot with system",
+        "time" : {
+          "start" : 1542994180296,
+          "stop" : 1542994180574,
+          "duration" : 278
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5c4d1759e33d53a0",
+          "name" : "screenshot",
+          "source" : "5c4d1759e33d53a0.png",
+          "type" : "image/png",
+          "size" : 175996
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Close browser \"chrome-0f1d7200-1968-4e8d-9045-b85ce7437df6\"",
+      "time" : {
+        "start" : 1542994180575,
+        "stop" : 1542994181641,
+        "duration" : 1066
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sleep 1 sec because webdriver process will be stopped",
+        "time" : {
+          "start" : 1542994180639,
+          "stop" : 1542994181640,
+          "duration" : 1001
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Stop selenium server",
+      "time" : {
+        "start" : 1542994181642,
+        "stop" : 1542994182019,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 47,
+    "attachmentsCount" : 11,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testClass",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Images processing"
+  }, {
+    "name" : "package",
+    "value" : "e2e tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5035028909c129fe.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

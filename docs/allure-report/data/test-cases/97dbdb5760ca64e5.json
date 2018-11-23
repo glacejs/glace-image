@@ -1,0 +1,77 @@
+{
+  "uid" : "97dbdb5760ca64e5",
+  "name" : ".__getElementLocation()",
+  "fullName" : "Steps..__getElementLocation()",
+  "historyId" : "af43be2f6fb5ae91b444037feb04b01a",
+  "time" : {
+    "start" : 1542994151433,
+    "stop" : 1542994151437,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "gets element location",
+      "time" : {
+        "start" : 1542994151433,
+        "stop" : 1542994151436,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Steps"
+  }, {
+    "name" : "testClass",
+    "value" : "Steps"
+  }, {
+    "name" : "testMethod",
+    "value" : ".__getElementLocation()"
+  }, {
+    "name" : "package",
+    "value" : "Steps"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "97dbdb5760ca64e5.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}
