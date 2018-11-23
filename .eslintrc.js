@@ -23,7 +23,7 @@ module.exports = {
         "fxVideo": true,
         "fxKillWebdriver": true,
         "fxBrowser": true,
-        "fxSelenium": true,
+        "fxSeleniumServer": true,
         "fxScreenOnFail": true,
         "document": true,
         "window": true,

@@ -20,9 +20,9 @@ suite("fixtures", () => {
         });
     });
 
-    test("afterCb", () => {
+    test("afterChunkCb", () => {
         var sandbox = sinon.createSandbox();
-        var afterCb = fixture.__get__("afterCb");
+        var afterChunkCb = fixture.__get__("afterChunkCb");
 
         beforeChunk(() => {
             sandbox.stub(LOG, "error");
@@ -40,19 +40,19 @@ suite("fixtures", () => {
         });
 
         chunk("do nothing if no fails", async () => {
-            await afterCb({ errNumber: 0 })();
+            await afterChunkCb({ errNumber: 0 })();
             expect($.makeScreenshot).to.not.be.called;
         });
 
         chunk("makes screenshot with selenium if browser launched", async () => {
-            await afterCb({})();
+            await afterChunkCb({})();
             expect($.makeScreenshot).to.be.calledOnce;
             expect($.makeScreenshot.args[0][0].by).to.be.equal("selenium");
         });
 
         chunk("makes screenshot with system if no browser", async () => {
             $.webdriver.session.returns(false);
-            await afterCb({})();
+            await afterChunkCb({})();
             expect($.makeScreenshot).to.be.calledOnce;
             expect($.makeScreenshot.args[0][0].by).to.be.equal("system");
         });
@@ -61,7 +61,7 @@ suite("fixtures", () => {
             $.webdriver.session = function () {
                 throw new Error("BOOM!");
             };
-            await afterCb({})();
+            await afterChunkCb({})();
             expect($.makeScreenshot).to.be.calledOnce;
             expect($.makeScreenshot.args[0][0].by).to.be.equal("system");
         });
@@ -70,7 +70,7 @@ suite("fixtures", () => {
             $.makeScreenshot = sinon.spy(function () {
                 throw new Error("BOOM!");
             });
-            await afterCb({})();
+            await afterChunkCb({})();
             expect($.makeScreenshot).to.be.calledOnce;
             expect(LOG.error).to.be.calledOnce;
         });
