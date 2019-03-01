@@ -1,0 +1,130 @@
+{
+  "uid" : "71ae26e940cc383e",
+  "name" : "afterChunkCb",
+  "fullName" : "fixtures.afterChunkCb",
+  "historyId" : "26661d72adb8dd8688c7ff7b797c0ba",
+  "time" : {
+    "start" : 1551415637878,
+    "stop" : 1551415637885,
+    "duration" : 7
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "do nothing if no fails",
+      "time" : {
+        "start" : 1551415637878,
+        "stop" : 1551415637880,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "makes screenshot with selenium if browser launched",
+      "time" : {
+        "start" : 1551415637881,
+        "stop" : 1551415637882,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "makes screenshot with system if no browser",
+      "time" : {
+        "start" : 1551415637882,
+        "stop" : 1551415637883,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "makes screenshot with system if selenium is failed",
+      "time" : {
+        "start" : 1551415637883,
+        "stop" : 1551415637883,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "skipped if screencapture is failed",
+      "time" : {
+        "start" : 1551415637884,
+        "stop" : 1551415637884,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fixtures"
+  }, {
+    "name" : "testClass",
+    "value" : "fixtures"
+  }, {
+    "name" : "testMethod",
+    "value" : "afterChunkCb"
+  }, {
+    "name" : "package",
+    "value" : "fixtures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "71ae26e940cc383e.json",
+  "parameterValues" : [ ]
+}
